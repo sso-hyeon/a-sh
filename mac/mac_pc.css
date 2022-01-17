@@ -26,7 +26,6 @@ header .menu {
     justify-content: space-around;
     border-top: 1px solid #fff;
     margin-top: 79px;
-
 }
 
 header .menu .box1 {
@@ -54,7 +53,7 @@ header .menu .sns {
     height: 40px;
 }
 
-header>.user_menu {
+header > .user_menu {
     color: #fff;
     display: flex;
     font-size: 22px;
@@ -62,16 +61,16 @@ header>.user_menu {
     border-bottom: 1px solid #fff;
 }
 
-header>.user_menu li:first-child {
+header > .user_menu li:first-child {
     text-transform: lowercase;
 }
-header>.user_menu li a {
+header > .user_menu li a {
     padding: 0 40px;
     line-height: 80px;
     border-left: 1px solid #fff;
 }
 
-header>.user_menu li:hover a {
+header > .user_menu li:hover a {
     background-color: #fff;
     color: #000;
 }
@@ -80,7 +79,7 @@ header>.user_menu li:hover a {
     background-color: #000;
     border-bottom: 1px solid #fff;
 }
-.black { 
+.black {
     background-color: #000;
 }
 header h1 {
@@ -97,12 +96,12 @@ header h1 {
 /* main */
 .main .main_bg {
     text-indent: -9999px;
-    background: url(images/main_img_pc.jpg) no-repeat 50%/cover;
+    background: url(images/main_img_pc.jpg) no-repeat 50% / cover;
     width: 100%;
     height: 160vh;
 }
 
-.main>h2 {
+.main > h2 {
     font-size: 130px;
     margin-left: 180px;
     bottom: 85vh;
@@ -120,7 +119,7 @@ header h1 {
     justify-content: space-between;
 }
 
-.side>div {
+.side > div {
     text-transform: uppercase;
     color: #fff;
     text-align: center;
@@ -158,7 +157,7 @@ header h1 {
     z-index: 20;
 }
 
-.makeup>div {
+.makeup > div {
     width: 80%;
     position: absolute;
     right: 0;
@@ -167,25 +166,28 @@ header h1 {
     padding: 70px 0;
 }
 
-.makeup>div h3 {
+.makeup > div h3 {
     font-size: 70px;
 }
 
-.makeup>div p {
+.makeup > div p {
     font-size: 40px;
     margin: 50px 0;
 }
 
-.makeup>div a {
+.makeup > div a {
     font-size: 30px;
     width: 400px;
     line-height: 80px;
     margin: 0;
 }
 
-.makeup>div a:hover{ background-color: #fff; color: #000;}
+.makeup > div a:hover {
+    background-color: #fff;
+    color: #000;
+}
 
-.makeup>img {
+.makeup > img {
     width: 80%;
     position: absolute;
     top: 60vh;
@@ -300,7 +302,7 @@ footer h5 img {
     height: 25px;
 }
 
-footer>div {
+footer > div {
     border: 1px solid #fff;
     width: 80%;
     margin: 0 auto;
@@ -324,7 +326,7 @@ footer .gnb1 li:hover a {
 }
 
 footer .gnb2 {
-    width: 30%;
+    width: 35%;
 }
 
 footer .gnb2 ul {
@@ -360,7 +362,7 @@ footer .btn_wrap div:hover a {
     color: orange;
 }
 
-footer>p {
+footer > p {
     text-align: center;
     text-transform: uppercase;
     line-height: 1.5;
