@@ -1,0 +1,25 @@
+@charset "uth-8";
+
+/*** main ***/
+main { padding: 0;}
+main > h1 { font-size: 2.5rem; margin-top: 137px; padding-left: 30px;}
+main .container { padding-top: 10vh; box-sizing: border-box;}
+main .container > div { display: flex; flex-direction: column; border-top: 1px solid #414042; border-bottom: 1px solid #414042; }
+
+main .container > div > .txt { display: flex; flex-direction: column; justify-content: space-between; box-sizing: border-box; padding: 30px;}
+main .container > div > .txt h2 { font-size: 1.25rem; margin-bottom: 30px;}
+
+main .container .tag_m { display: flex; margin-bottom: 35px;}
+
+main .container > div .btn_wrap { display: flex; justify-content: space-between; margin-top: 30px;} 
+main .container > div .btn_wrap li { width: 45%;} 
+
+main .container > div .btn_wrap a { text-align: center; border: 1px solid #000; width: 100%; height: 36px; border-radius: 18px; line-height: 36px; font-weight: 700; }
+main .container > div .btn_wrap a:hover { background-color: #000; color: #fff; }
+
+main > div:last-child { margin-bottom: 120px;}
+
+main > .container > div > .thumbnail1 { width: 100%; height: 50vw; background: url(images/pf_main1.jpg) no-repeat 50% 50%/cover;}
+main > .container > div > .thumbnail2 { width: 100%; height: 50vw; background: url(images/pf_main3.jpg) no-repeat 50% 50%/cover;}
+main > .container > div > .thumbnail3 { width: 100%; height: 50vw; background: url(images/pf_main2.jpg) no-repeat 50% 50%/cover;}
+main > .container > div > .thumbnail4 { width: 100%; height: 50vw; background: url(images/pf_main4.jpg) no-repeat 50% 50%/cover;}

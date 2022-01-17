@@ -1,0 +1,468 @@
+@charset "utf-8";
+
+body {
+    font-family: 'Noto Serif KR', serif;
+}
+
+.sans {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+
+img {
+    vertical-align: top;
+    display: block;
+    width: inherit;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.m_hide {
+    display: none;
+}
+
+/* header */
+header {
+    height: 80px;
+    position: fixed;
+    border-bottom: 1px solid #fff;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 50;
+}
+
+header h1 {
+    text-indent: -9999px;
+    background: url(images/logo.svg) no-repeat 50%/contain;
+    width: 120px;
+    margin-left: 20px;
+}
+
+.down {
+    background-color: #000;
+}
+.black {
+    background-color: #000;
+}
+
+
+.hamburger {
+    width: 80px;
+    border-left: solid 1px #fff;
+    border-bottom: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.hamburger .bar {
+    height: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hamburger .bar span {
+    height: 1px;
+    background-color: #fff;
+    width: 28px;
+    display: block;
+    transition: 0.3s;
+}
+
+/* menu */
+header .menu {
+    width: 100%;
+    position: fixed;
+    margin-top: 81px;
+    height: calc(100vh - 81px);
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transform: translateX(100%);
+    transition: 0.6s;
+}
+
+header .menu.active {
+    transform: translateX(0);
+}
+
+.menu .box1 {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #fff;
+    text-transform: capitalize;
+    font-size: 22px;
+}
+
+.menu .box1 li {
+    width: 50%;
+    text-align: center;
+    line-height: 80px;
+}
+
+.menu .box1 li:first-child {
+    border-right: 1px solid #fff;
+}
+
+.menu .box2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 24px;
+    line-height: 3.5;
+}
+
+.menu .sns {
+    padding: 0;
+    width: 50%;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.menu .sns li {
+    width: 50px;
+    height: 50px;
+}
+
+.menu .sns li a {
+    width: 33px;
+    height: 33px;
+}
+
+/* menu click */
+header .menu .hamburger .bar.open {
+    transform: translateX(-20%);
+}
+
+.hamburger .bar.open span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg) translateX(0);
+}
+
+.hamburger .bar.open span:nth-child(2) {
+    display: none;
+}
+
+.hamburger .bar.open span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg) translateX(0);
+}
+
+.pc_menu {
+    display: none;
+}
+
+/* main */
+main {
+    width: 100%;
+    overflow: hidden;
+}
+
+.main {
+    position: relative;
+    width: 100%;
+}
+
+.main .main_bg {
+    text-indent: -9999px;
+    background: url(images/main_img_m.jpg) no-repeat 50%/cover;
+    width: 100%;
+    height: 570px;
+}
+
+.main>h2 {
+    position: absolute;
+    bottom: 45px;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 40px;
+    margin-left: 20px;
+}
+
+/* makeup */
+.makeup {
+    background-color: #000;
+    color: #fff;
+}
+
+.makeup>div {
+    padding: 30px 20px;
+}
+
+.makeup>div h3 {
+    margin: 0;
+    font-size: 23px;
+}
+
+.makeup>div p {
+    font-size: 14px;
+    margin: 30px 0 50px;
+    line-height: 1.5;
+}
+
+.makeup>div a {
+    text-align: center;
+    border: #fff 1px solid;
+    width: 200px;
+    line-height: 40px;
+    margin: 0 auto;
+}
+
+.makeup>img {
+    width: 100%;
+}
+
+/* intro */
+.intro {
+    width: 100%;
+    height: 550px;
+    position: relative;
+}
+
+.intro h4 {
+    font-size: 45px;
+    color: #ebdfd4;
+    margin: 0;
+    padding-top: 135px;
+    text-transform: capitalize;
+    padding-left: 20px;
+    position: relative;
+    z-index: 38;
+    line-height: 1.3;
+}
+
+.intro div {
+    position: absolute;
+    text-indent: -9999px;
+}
+
+.intro .shadow {
+    background: url(images/shadow.png) no-repeat 50% 50%/contain;
+    width: 150px;
+    height: 150px;
+    top: -75px;
+    right: 0;
+    animation: rotate_r 12s linear infinite;
+}
+
+.intro .cushion {
+    background: url(images/cushion.png) no-repeat 50% 50%/contain;
+    width: 190px;
+    height: 190px;
+    top: -30px;
+    left: -40px;
+    animation: rotate_l 12s linear infinite;
+}
+
+.intro .lipstick {
+    background: url(images/lipstick.png) no-repeat 50% 50%/contain;
+    width: 45px;
+    height: 180px;
+    bottom: 0;
+    left: 55%;
+    animation: rotate_r 12s linear infinite;
+}
+
+.intro .lip_cap {
+    background: url(images/lip_cap.png) no-repeat 50% 50%/contain;
+    width: 45px;
+    height: 92px;
+    bottom: 30px;
+    left: 80%;
+    animation: rotate_l 12s linear infinite;
+}
+
+.intro .palette {
+    background: url(images/palette.png) no-repeat 50% 50%/contain;
+    width: 170px;
+    height: 170px;
+    left: 0;
+    top: 55%;
+    animation: rotate_l 12s linear infinite;
+}
+
+.intro .fix {
+    background: url(images/fix.png) no-repeat 50% 50%/contain;
+    width: 200px;
+    height: 200px;
+    top: 180px;
+    right: -50px;
+    animation: rotate_l 12s linear infinite;
+}
+
+@keyframes rotate_r {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate_l {
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+/* products category */
+.products h4 {
+    font-size: 45px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #ebdfd4;
+}
+
+.category {
+    overflow: scroll;
+    width: 100%;
+}
+
+.category ul {
+    display: flex;
+    justify-content: space-around;
+    width: 1600px;
+    height: 540px;
+}
+
+.category ul li {
+    width: 285px;
+    height: 540px;
+}
+
+.category ul li a {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    text-transform: capitalize;
+}
+
+.category ul li:nth-child(1) {
+    background: url(images/product_skin.jpg) no-repeat 50% 50%/cover;
+}
+
+.category ul li:nth-child(2) {
+    background: url(images/product_lip.jpg) no-repeat 50% 50%/cover;
+}
+
+.category ul li:nth-child(3) {
+    background: url(images/product_base.jpg) no-repeat 50% 50%/cover;
+}
+
+.category ul li:nth-child(4) {
+    background: url(images/product_eyes.jpg) no-repeat 50% 50%/cover;
+}
+
+.category ul li:nth-child(5) {
+    background: url(images/product_tools.jpg) no-repeat 50% 50%/cover;
+}
+
+/* footer */
+footer {
+    background-color: #000;
+    color: #fff;
+    margin-top: -270px;
+    padding-top: 270px;
+}
+
+footer h5 {
+    margin: 70px 0 15px;
+}
+
+footer h5 img {
+    height: 16px;
+    margin: 0 auto;
+}
+
+footer .gnb1 {
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 2.3;
+    font-size: 18px;
+    padding: 45px 0;
+}
+
+footer .gnb2 ul {
+    display: flex;
+    justify-content: space-around;
+    font-size: 15px;
+    padding: 0 20px;
+}
+
+footer .btn_wrap {
+    display: flex;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    justify-content: space-around;
+}
+
+footer .btn_wrap div {
+    width: 50%;
+    text-align: center;
+}
+
+footer .btn_wrap a {
+    line-height: 80px;
+    text-transform: capitalize;
+}
+
+footer .btn_wrap div:first-child a {
+    border-right: 1px solid #fff;
+}
+
+footer>p {
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1.5;
+    padding: 35px 60px;
+    font-size: 13px;
+    margin: 0;
+}
+
+.sns {
+    display: flex;
+    justify-content: space-between;
+    text-indent: -9999px;
+    padding: 45px 50px;
+}
+
+.sns li {
+    width: 70px;
+    height: 70px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sns li a {
+    width: 40px;
+    height: 40px;
+    color: #fff;
+}
+
+.sns li:nth-child(1) a {
+    background: url(images/facebook.svg) no-repeat 50%/contain;
+}
+
+.sns li:nth-child(2) a {
+    background: url(images/instagram.svg) no-repeat 50%/contain;
+}
+
+.sns li:nth-child(3) a {
+    background: url(images/youtube.svg) no-repeat 50%/contain;
+}

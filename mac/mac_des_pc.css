@@ -1,0 +1,286 @@
+@charset "utf-8";
+
+/* header */
+header .main_image {
+    width: 72%;
+    height: 80vh;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+}
+
+header .title {
+    width: 28%;
+    padding: 200px 0 0 140px;
+    height: 80vh;
+    display: inline-block;
+}
+
+header .title #date {
+    margin: 30px 0;
+}
+
+.close {
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    top: 60px;
+    right: 60px;
+}
+
+
+/* section common */
+section {
+    margin: 200px 0;
+}
+
+section h2 {
+    margin-left: 18%;
+    margin-bottom: 100px;
+    font-size: 20px;
+}
+
+section h2>.num {
+    font-size: 30px;
+    margin-right: 40px;
+}
+
+/* intro overview */
+.intro .project_title {
+    font-size: 25px;
+    box-sizing: border-box;
+    text-align: left;
+    display: inline-block;
+    margin: 0 0 70px 28%;
+}
+
+.intro ul {
+    margin-left: 28%;
+}
+
+.intro ul li {
+    margin-bottom: 15px;
+}
+
+.intro ul span {
+    width: 200px;
+}
+
+/* problem */
+.problem div {
+    margin: 30px 0 30px 28%;
+}
+
+.problem div p {
+    font-size: 1rem;
+    margin: 0;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.problem div h3 {
+    font-size: 20px;
+    margin: 30px 0;
+}
+
+/* publishing */
+.publishing .img {
+    width: 70%;
+    margin: 70px auto 120px;
+}
+
+.publishing .img li {
+    margin: 0 5px;
+}
+
+.publishing .txt {
+    margin: 0 0 0 28%;
+    font-size: 1rem;
+}
+
+.publishing .txt li {
+    margin-bottom: 20px;
+}
+
+.publishing .txt span {
+    font-weight: 700;
+    width: 200px;
+    display: inline-block;
+}
+
+.publishing p {
+    margin-left: 28%;
+    margin-top: 20px;
+    font-size: 1rem;
+}
+
+/* point */
+.point p {
+    margin: 0 0 0 28%;
+    font-size: 1rem;
+}
+
+.point ul {
+    margin: 50px 0 0 28%;
+    display: flex;
+}
+
+.point ul li {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 15px;
+    font-size: 30px;
+}
+
+/* design concept */
+.design_concept {
+    padding: 50px 0;
+}
+
+.design_concept>p {
+    margin: 45px 0 80px;
+    font-size: 1rem;
+}
+
+.design_concept div {
+    padding: 30px;
+    width: 50%;
+    margin: 0 auto;
+    font-size: 1rem;
+}
+
+.design_concept div p:first-child {
+    font-size: 20px;
+}
+
+.keyword {
+    display: flex;
+    justify-content: center;
+}
+
+.keyword li {
+    width: 200px;
+    height: 200px;
+    font-size: 19px;
+    margin: 0 30px;
+}
+
+.keyword li strong {
+    font-size: 35px;
+}
+
+/* color */
+.color {
+    justify-content: space-between;
+    font-size: 19px;
+    margin: 0 auto 140px;
+    width: 50%;
+    margin: 0 auto 60px;
+}
+
+.color li {
+    width: 33%;
+}
+
+.color li div {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 60px;
+}
+
+.color li p {
+    display: block;
+}
+
+.color li p:last-child {
+    margin-top: 20px;
+    font-size: 17px;
+}
+
+.color_wrap>p {
+    font-size: 1rem;
+    width: 45%;
+    margin: 0 auto;
+}
+
+/* typography */
+.typo .font_box {
+    display: flex;
+    width: 50%;
+    margin: 100px auto;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+}
+
+.typo .font_box>div {
+    width: 50%;
+    font-size: 1rem;
+    margin: 0;
+}
+
+.typo .font_box>img {
+    width: 200px;
+    margin: 0;
+}
+
+/* 주요기능 및 시각화 */
+.main_function>div {
+    width: 50%;
+    flex-direction: row;
+    margin: 100px auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main_function>div>img {
+    width: 60%;
+    margin: 0;
+}
+
+.main_function>div>.txt {
+    width: 30%;
+    margin: 0;
+}
+
+.main_function>div>.txt h3 {
+    font-size: 20px;
+}
+
+.main_function>div>.txt div {
+    font-size: 25px;
+    margin: 20px 0 35px;
+}
+
+.main_function>div>.txt>p {
+    font-size: 1rem;
+}
+
+.main_function>.point2 {
+    flex-direction: row;
+}
+
+/* footer */
+footer {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .btn_wrap {
+    flex-direction: row;
+    width: 60%;
+    align-items: center;
+}
+
+footer .btn_wrap li a {
+    width: 400px;
+    height: 100px;
+    border-radius: 50px;
+    font-size: 35px;
+    line-height: 100px;
+}
