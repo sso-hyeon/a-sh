@@ -7,7 +7,7 @@
 /* header */
 header h1 {
     text-indent: -9999px;
-    background: url(../images/logo.svg) no-repeat 50% 50%/contain;
+    background: url(../images/logo.svg) no-repeat 50% 50% / contain;
     width: 140px;
     height: 38px;
     margin-left: 20px;
@@ -93,7 +93,7 @@ header h1 {
     height: 15vh;
     font-size: 30px;
     border-top: 4px solid #000;
-    font-family: 'GmarketSansB';
+    font-family: "GmarketSansB";
     display: flex;
     align-items: center;
     color: #fff;
@@ -146,17 +146,18 @@ main nav ul {
     width: 850px;
     margin: 0;
     font-size: 15px;
-    font-family: 'GmarketSansB';
+    font-family: "GmarketSansB";
 }
 
 /* swiper */
 .swiper-container {
+    overflow: hidden;
     width: 100%;
-    height: 326px;
+    height: 45vh;
 }
 
 .swiper-container .swiper-wrapper .swiper-slide {
-    background-position: 50% 0;
+    background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
     text-indent: -9999px;
@@ -188,35 +189,35 @@ section h4 {
 }
 
 /* product list */
-section>.product {
+section > .product {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     justify-content: center;
 }
 
-section>.product li {
+section > .product li {
     width: 45%;
     margin: 30px 7.5px;
 }
 
-section>.product li>p:nth-of-type(1) {
+section > .product li > p:nth-of-type(1) {
     font-size: 12px;
-    font-family: 'GmarketSansL';
+    font-family: "GmarketSansL";
 }
 
-section>.product li>p:nth-of-type(2) {
+section > .product li > p:nth-of-type(2) {
     margin: 0;
     line-height: 1.5;
 }
 
-section>.product li>p:nth-of-type(2)>.cost {
+section > .product li > p:nth-of-type(2) > .cost {
     font-size: 10px;
     color: #a7a9ac;
     text-decoration: line-through;
 }
 
-section>.product li>p:nth-of-type(2)>.sale {
+section > .product li > p:nth-of-type(2) > .sale {
     display: block;
     background-color: #f15a29;
     width: 35px;
@@ -225,8 +226,16 @@ section>.product li>p:nth-of-type(2)>.sale {
     color: #fff;
 }
 
-.product { position: relative;}
-.product .click2 { position: absolute; width: 50px; transform: rotate(90deg);top:20px; left: 0;}
+.product {
+    position: relative;
+}
+.product .click2 {
+    position: absolute;
+    width: 50px;
+    transform: rotate(90deg);
+    top: 20px;
+    left: 0;
+}
 
 /* list */
 .list {
@@ -234,12 +243,11 @@ section>.product li>p:nth-of-type(2)>.sale {
     padding-bottom: 130px;
 }
 
-
 /* page */
 .page {
     display: flex;
     font-size: 20px;
-    font-family: 'GmarketSansB';
+    font-family: "GmarketSansB";
     width: 100%;
     justify-content: space-between;
     align-items: center;
@@ -278,7 +286,7 @@ section>.product li>p:nth-of-type(2)>.sale {
     box-sizing: border-box;
 }
 
-.btn_wrap>div {
+.btn_wrap > div {
     font-size: 24px;
     text-align: center;
     width: 45%;
@@ -286,10 +294,10 @@ section>.product li>p:nth-of-type(2)>.sale {
     background-color: #fff;
     border: 2px solid #000;
     box-shadow: -2px 3px 0 #000;
-    font-family: 'GmarketSansB';
+    font-family: "GmarketSansB";
 }
 
-.btn_wrap>div:hover {
+.btn_wrap > div:hover {
     box-shadow: none;
 }
 
@@ -314,7 +322,7 @@ footer .foot {
 
 footer .portfolio a {
     font-size: 13px;
-    font-family: 'GmarketSansM';
+    font-family: "GmarketSansM";
     line-height: 24px;
     width: 130px;
     height: 24px;
@@ -324,19 +332,19 @@ footer .portfolio a {
     text-align: center;
 }
 
-footer .foot>div img {
+footer .foot > div img {
     width: 110px;
 }
 
-footer .foot>div p {
+footer .foot > div p {
     font-size: 8px;
 }
 
-footer .foot>ul {
+footer .foot > ul {
     font-size: 13px;
 }
 
-footer .foot>ul li {
+footer .foot > ul li {
     line-height: 2;
 }
 

@@ -1,0 +1,151 @@
+@charset "utf-8";
+
+/* swiper */
+.swiper-container {
+    width: 100%;
+    height: 50vh;
+    padding: 0 5%;
+    box-sizing: border-box;
+    margin: 15vh auto 8vh;
+    overflow-x: hidden;
+}
+.swiper-container .swiper-wrapper .swiper-slide {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-indent: -9999px;
+}
+.swiper-container .swiper-wrapper .img1 {
+    background-image: url(../images/pf_img1.jpg);
+}
+.swiper-container .swiper-wrapper .img2 {
+    background-image: url(../images/pf_img4.jpg);
+}
+.swiper-container .swiper-wrapper .img3 {
+    background-image: url(../images/pf_img2.jpg);
+}
+.swiper-container .swiper-wrapper .img4 {
+    background-image: url(../images/pf_img5.jpg);
+}
+
+/*** main ***/
+main {
+    padding: 0 5%;
+}
+main > h1 {
+    font-size: 3.438rem;
+}
+
+/* section_common */
+section .list {
+    display: flex;
+    margin: 40px 0 70px;
+    line-height: 2.5;
+    font-size: 1rem;
+}
+section .date {
+    font-weight: 700;
+    display: inline-block;
+    font-size: 1.125rem;
+}
+
+section > h2 {
+    font-size: 1.563rem;
+    padding-top: 40px;
+}
+section > p {
+    font-size: 1.25rem;
+    margin-top: 15px;
+}
+
+.list > ul > li {
+    display: flex;
+    flex-direction: column;
+}
+
+/* intro */
+.intro > .profile {
+    display: flex;
+    margin: 100px 0;
+    flex-direction: column;
+}
+.intro > .profile > .pf_img {
+    background: url(../images/profile_img.jpg) no-repeat 50% / cover;
+    width: 100%;
+    height: 360px;
+    margin: 0 auto 20px;
+    display: block;
+}
+
+.intro > .profile > ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 0;
+    margin-top: 25px;
+}
+.intro > .profile li {
+    margin-bottom: 25px;
+}
+.intro > .profile li > h3 {
+    font-size: 1.563rem;
+}
+.intro > .profile li > p {
+    font-size: 1.25rem;
+    margin-top: 15px;
+}
+.intro > .profile li:nth-child(4) > p {
+    text-transform: lowercase;
+}
+
+/* tag */
+.tag {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin: 150px 0;
+    line-height: 1.5;
+    height: 200px;
+}
+
+/* skills */
+.skill_list {
+    display: flex;
+    margin-bottom: 110px;
+    flex-direction: column;
+}
+.skill_list > div {
+    margin-top: 70px;
+}
+.skill_list > div > p:nth-child(1) {
+    font-size: 0.938rem;
+    font-weight: 700;
+    position: relative;
+    display: inline-block;
+}
+.skill_list > div > p:nth-child(1)::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 10px;
+    background-color: rgba(255, 255, 46, 0.5);
+    z-index: -5;
+}
+.skill_list > div > p:nth-child(2) {
+    font-size: 1.75rem;
+    font-weight: 700;
+    line-height: 1.5;
+    margin: 20px 0;
+}
+.skill_list > div > p:nth-child(3) {
+    font-size: 0.938rem;
+}
+
+/* career */
+.career {
+    margin-bottom: 110px;
+}
+.career > .list .part {
+    text-transform: uppercase;
+}

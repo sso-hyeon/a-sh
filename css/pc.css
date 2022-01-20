@@ -1,0 +1,167 @@
+@charset "utf-8";
+
+/*** slide ***/
+.slide {
+    padding: 20px;
+    position: fixed;
+    right: 0px;
+    height: 100vh;
+    overflow: hidden;
+    top: 0;
+    background-color: #fff;
+    z-index: 2;
+}
+.slide .gallery {
+    text-align: center;
+    animation: slide linear 8s infinite alternate;
+}
+/* .slide .gallery:hover {
+    animation-play-state: paused;
+} */
+
+@keyframes slide {
+    100% {
+        transform: translateY(-100vh);
+    }
+}
+.slide .gallery a {
+    margin: 10px 0;
+    width: 330px;
+    height: 330px;
+    background: url(../images/pf_img1.jpg) no-repeat 50% 50% / cover;
+    text-indent: -9999px;
+}
+.slide .gallery li:nth-child(2) a {
+    background: url(../images/pf_img4.jpg) no-repeat 50% 50% / cover;
+}
+.slide .gallery li:nth-child(3) a {
+    background: url(../images/pf_img3.jpg) no-repeat 50% 50% / cover;
+}
+.slide .gallery li:nth-child(4) a {
+    background: url(../images/pf_img5.jpg) no-repeat 50% 50% / cover;
+}
+
+.slide .gallery a:hover {
+    opacity: 0.8;
+}
+
+/*** main ***/
+main {
+    margin-left: 15%;
+    padding-left: 45px;
+    margin-top: 13vh;
+    width: 67%;
+}
+main > h1 {
+    font-size: 6rem;
+    margin-top: 55vh;
+}
+
+/* intro */
+.intro > .profile {
+    display: flex;
+    margin: 90px 0;
+}
+.intro > .profile > .pf_img {
+    background: url(../images/profile_img.jpg) no-repeat 70% 50% / cover;
+    width: 350px;
+    height: 460px;
+    margin: 0;
+    display: block;
+}
+.intro > .profile > ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 56px;
+}
+.intro > .profile li {
+    font-size: 1.875rem;
+}
+.intro > .profile li > p {
+    font-size: 1.75rem;
+    margin-top: 15px;
+}
+.intro > .profile li:nth-child(4) > p {
+    text-transform: lowercase;
+}
+
+/* tag */
+.tag {
+    width: 90%;
+    height: 300px;
+    font-size: 6rem;
+    font-weight: 700;
+    margin: 200px 0;
+    line-height: 1.5;
+}
+
+/* section_common */
+section > h2 {
+    font-size: 3.125rem;
+    padding-top: 130px;
+}
+section > p {
+    font-size: 2.3rem;
+    margin-top: 25px;
+}
+section .list {
+    display: flex;
+    margin: 90px 0 70px;
+    line-height: 2.2;
+    font-size: 1.6rem;
+}
+section .date {
+    font-weight: 700;
+    width: 330px;
+    display: inline-block;
+}
+
+/* skills */
+.skill_list {
+    display: flex;
+    margin-bottom: 170px;
+    justify-content: space-between;
+    width: 90%;
+}
+.skill_list > div {
+    margin-top: 90px;
+}
+.skill_list > div > p:nth-child(1) {
+    font-size: 1.125rem;
+    font-weight: 700;
+    position: relative;
+    display: inline-block;
+}
+.skill_list > div > p:nth-child(1)::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 10px;
+    background-color: rgba(255, 255, 46, 0.5);
+    z-index: -5;
+}
+.skill_list > div > p:nth-child(2) {
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1.5;
+    margin: 35px 0;
+}
+.skill_list > div > p:nth-child(3) {
+    font-size: 1.125rem;
+}
+
+/* career */
+.career {
+    margin-bottom: 250px;
+}
+.career > .list .date {
+    width: 500px;
+}
+.career > .list .part {
+    margin-left: 30px;
+    text-transform: uppercase;
+    word-spacing: 10px;
+}

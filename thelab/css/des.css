@@ -3,7 +3,7 @@
 /* common */
 body {
     text-transform: capitalize;
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: "Noto Sans KR", sans-serif;
     font-weight: 300;
 }
 
@@ -44,12 +44,12 @@ img {
     border-radius: 20px;
     line-height: 40px;
     font-weight: 700;
-    background: url(../../images/icon-09.png) no-repeat 93%/cover;
+    background: url(../../images/icon-09.png) no-repeat 93% / cover;
     background-size: 13px;
 }
 
 .title a:hover {
-    background: url(../../images/icon_w-09.png) no-repeat 93%/cover #000;
+    background: url(../../images/icon_w-09.png) no-repeat 93% / cover #000;
     background-size: 13px;
     color: #fff;
 }
@@ -61,14 +61,14 @@ img {
     top: 30px;
     right: 30px;
     text-indent: -9999px;
-    background: url(../images/close.svg) no-repeat 50% 50%/contain;
+    background: url(../../images/close.svg) no-repeat 50% 50% / contain;
     z-index: 999;
 }
 
 /* header */
 header .main_image {
     width: 100%;
-    background: url(images/des/des_main.jpg) no-repeat 50%/cover;
+    background: url(../images/main.png) no-repeat 50% / cover;
     text-indent: -9999px;
     height: 30vh;
 }
@@ -125,20 +125,20 @@ section h2 {
     font-size: 1rem;
 }
 
-section h2>.num {
+section h2 > .num {
     color: #d8dde5;
     font-size: 20px;
     margin-right: 20px;
 }
 
-section h2>.light {
+section h2 > .light {
     font-weight: 400;
 }
 
 /* intro overview */
 .intro .project_title {
-    background-color: #ffcf3e;
-    color: #000;
+    background-color: #00abeb;
+    color: #fff;
     font-size: 1rem;
     padding: 12px;
     text-align: center;
@@ -175,7 +175,7 @@ section h2>.light {
 .problem div h3 {
     padding: 10px;
     font-size: 1rem;
-    border: 2px solid #ffcf3e;
+    border: 2px solid #00abeb;
     display: inline-block;
     margin: 0 20px;
 }
@@ -219,7 +219,7 @@ section h2>.light {
 .publishing p {
     margin: 20px;
     font-weight: 700;
-    color: #5c9fdb;
+    color: #00abeb;
     font-size: 14px;
 }
 
@@ -231,9 +231,12 @@ section h2>.light {
     text-align: justify;
 }
 
+.point ul {
+}
+
 .point ul li {
-    background-color: #ffcf3e;
-    color: #000;
+    background-color: #00abeb;
+    color: #fff;
     font-weight: 700;
     font-size: 1rem;
     margin: 10px 20px;
@@ -247,14 +250,14 @@ section h2>.light {
     padding-top: 50px;
 }
 
-.design_concept>p {
+.design_concept > p {
     text-align: center;
     margin: 30px 20px 60px;
     font-size: 14px;
 }
 
 .design_concept div {
-    background-color: #5c9fdb;
+    background-color: #313942;
     color: #fff;
     padding: 20px;
     line-height: 1.5;
@@ -294,7 +297,7 @@ section h2>.light {
     font-size: 1rem;
     font-weight: 700;
     text-transform: uppercase;
-    color: #ff6f7a;
+    color: #00abeb;
 }
 
 /* color */
@@ -328,22 +331,19 @@ section h2>.light {
 }
 
 .color li:nth-child(1) div {
-    background-color: #ffcf3e;
+    background-color: #f6f7f9;
 }
 
 .color li:nth-child(2) div {
-    background-color: #d2e8e1;
+    background-color: #d8dde5;
 }
 
 .color li:nth-child(3) div {
-    background-color: #ff6f7a;
+    background-color: #313942;
 }
 
 .color li:nth-child(4) div {
-    background-color: #5c9fdb;
-}
-.color li:nth-child(5) div {
-    background-color: #e0dcfa;
+    background-color: #00abeb;
 }
 
 .color li p:last-child {
@@ -353,7 +353,7 @@ section h2>.light {
     font-size: 15px;
 }
 
-.color_wrap>p {
+.color_wrap > p {
     text-align: center;
     line-height: 1.5;
     font-size: 15px;
@@ -361,46 +361,49 @@ section h2>.light {
 }
 
 /* typography */
-.typo .font_box>div {
+.typo .font_box {
+}
+
+.typo .font_box > div {
     line-height: 1.5;
     margin: 0 20px;
     font-size: 15px;
     text-align: justify;
 }
 
-.typo .font_box>div>p {
+.typo .font_box > div > p {
     margin: 20px 0;
 }
 
-.typo .font_box>img {
+.typo .font_box > img {
     width: 70%;
     margin: 70px auto;
     display: block;
 }
 
 /* 주요기능 및 시각화 */
-.main_function>div {
+.main_function > div {
     display: flex;
     flex-direction: column;
     margin-bottom: 80px;
 }
 
-.main_function>div>img {
+.main_function > div > img {
     width: 80%;
     display: block;
     margin: 0 auto;
 }
 
-.main_function>div>.txt {
+.main_function > div > .txt {
     margin: 35px 20px;
 }
 
-.main_function>div>.txt h3 {
+.main_function > div > .txt h3 {
     color: #d8dde5;
     font-size: 15px;
 }
 
-.main_function>div>.txt div {
+.main_function > div > .txt div {
     font-weight: 700;
     color: #313942;
     font-size: 23px;
@@ -410,18 +413,18 @@ section h2>.light {
     margin: 15px 0;
 }
 
-.main_function>div>.txt>p {
+.main_function > div > .txt > p {
     line-height: 1.8;
     font-size: 15px;
 }
 
-.main_function>.point2 {
+.main_function > .point2 {
     flex-direction: column-reverse;
 }
 
 /* footer */
 footer {
-    background-color: #ff6f7a;
+    background-color: #313942;
     width: 100%;
     height: 320px;
     display: flex;
@@ -451,5 +454,5 @@ footer .btn_wrap li a {
 }
 
 footer .btn_wrap li:hover a {
-    color: #ffcf3e;
+    color: #00abeb;
 }

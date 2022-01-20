@@ -1,208 +1,228 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>더랩바이블랑두 작업과정</title>
-    <link rel="stylesheet" href="../common/normalize.css">
-    <link rel="stylesheet" href="../common/aos.css">
-        
-    <link rel="stylesheet" href="des.css">
-    <link rel="stylesheet" media="(min-width:1200px)" href="des_pc.css">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>더랩바이블랑두 작업과정</title>
+        <link rel="stylesheet" href="../common/css/reset.css" />
+        <link rel="stylesheet" href="../common/css/aos.css" />
 
+        <link rel="stylesheet" href="./css/des.css" />
+        <link rel="stylesheet" media="(min-width:1200px)" href="./css/des_pc.css" />
 
-    <!-- font -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap" rel="stylesheet">
+        <!-- font -->
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap"
+            rel="stylesheet"
+        />
 
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
-</head>
-<body>
-    <a href="../portfolio.html" class="close">포트폴리오페이지로 돌아가기</a>
-    <header>
-        <div class="title">
-            <p>THE LAB by blanc doux</p>
-            <h1>더랩바이블랑두</h1>
-            <p>responsive web</p>
-            <p id="date">date_2021.02.22</p>
-            <ul>
-                <li><span>tools : </span>illustrator , VS code</li>
-                <li><span>contribution : </span>100%</li>
-            </ul>
-            <a href="thelab_web.html" target="_blank">website</a>
-        </div>
-        <div class="main_image">메인 이미지</div>
-    </header>
-    <main>
-        <!-- overview -->
-        <section class="intro overview">
-            <h2><span class="num">01</span> overview</h2>
-            <h3 class="project_title" data-aos="fade-up">더랩바이블랑두 웹사이트 리디자인</h3>
-            <ul>
-                <li data-aos="fade-up"><span>프로젝트 설명:</span>화장품 브랜드 더랩바이블랑두의 웹 / 모바일 사이트 리디자인</li>
-                <li data-aos="fade-up"><span>프로젝트 제작 기간:</span>2021.02.08 ~ 2021.02.22</li>
-                <li data-aos="fade-up"><span>프로젝트 유형:</span>반응형 웹 사이트 디자인 & 구축</li>
-                <li data-aos="fade-up"><span>프로젝트 참여도:</span>개인 프로젝트 100%</li>
-            </ul>
-        </section>
-        <!-- problem -->
-        <section class="problem">
-            <h2><span class="num">02</span> problem</h2>
-            <div>
-                <h3 data-aos="flip-up">오래된 스타일의 웹페이지</h3>
-                <p>
-                    옛스타일의 웹페이지로 특별한 내용이 없고 판매 위주로 보이는 짧고 간결한 메인페이지였다.
-                </p>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    </head>
+    <body>
+        <a href="../portfolio.html" class="close">포트폴리오페이지로 돌아가기</a>
+        <header>
+            <div class="title">
+                <p>THE LAB by blanc doux</p>
+                <h1>더랩바이블랑두</h1>
+                <p>responsive web</p>
+                <p id="date">date_2021.02.22</p>
+                <ul>
+                    <li><span>tools : </span>illustrator , VS code</li>
+                    <li><span>contribution : </span>100%</li>
+                </ul>
+                <a href="thelab_web.html" target="_blank">website</a>
             </div>
-            <div>
-                <h3 data-aos="flip-up">자세히 보아야 보이는 브랜드</h3>
-                <p>
-                    제품에 대한 특성이나 브랜드의 가치관 등 어떠한 제품을 생산하며 목표하는지 한 눈에 볼 수 없다.
-                </p>
-            </div>
-        </section>
-        <!-- publishing -->
-        <section class="publishing">
-            <h2><span class="num">03</span> publishing<span class="light"> *메인페이지 제작</span></h2>
-            <ul class="img" data-aos="fade-up">
-                <li><img src="images/des/pub1.png" alt="pc1"></li>
-                <li><img src="images/des/pub2.png" alt="pc2"></li>
-                <li><img src="images/des/pub3.png" alt="모바일1"></li>
-                <li><img src="images/des/pub4.png" alt="모바일2"></li>
-                <li><img src="images/des/pub5.png" alt="모바일3"></li>
-            </ul> 
-            <ul class="txt">
-                <li><span>반응형 구현</span>PC - 1920X1080px (chrome 브라우저 최적화)  /  Mobile - 375X812px 에 최적화</li>
-                <li><span>슬라이드</span>자동 재생되어 바로 보이는 첫화면 최상단 이벤트 이미지 슬라이드 animation 효과 구현</li>
-                <li><span>웹폰트</span>CDN을 이용한 웹폰트로 서버 응답 시간 향상</li>
-                <li><span>CSS</span>CSS를 이용한 전반적인 디자인과 동일한 꾸밈값 적용</li>
-            </ul>
-            <p>* HTML5 , CSS3 를 사용하여 사용자 시선의 접근성과 웹표준을 준수하며 제작하였습니다</p>
-        </section>
-        <!-- point -->
-        <section class="point">
-            <h2><span class="num">04</span> HTML markup point</h2>
-            <p>HTML 재구현 시 필수적으로 웹 표준 및 접근성을 준수하였으며, 모바일로 변경하여도 무리없게 볼 수 있도록 반응형으로 작업하였습니다.</p>
-            <ul>
-                <li data-aos="fade-up"># 웹 표준 준수</li>
-                <li data-aos="fade-up"># 웹 접근성 준수</li>
-                <li data-aos="fade-up"># 반응형 웹페이지</li>
-            </ul>
-        </section>
-
-        <!-- design concept -->
-        <section class="design_concept">
-            <h2><span class="num">05</span> design concept</h2>
-            <ul class="keyword">
-                <li><strong>simple</strong>심플한,간단한</li>
-                <li><strong>nature</strong>자연,친근한,조화</li>
-                <li><strong>pure</strong>깨끗한,청량한,순수</li>
-            </ul>
-            <p>브랜드 비전에 맞춰 간결한 디자인,  자연친화적 , 깨끗하고 청량한 느낌의 디자인으로 제작합니다.</p>
-
-            <div data-aos="fade-up">
-                <p>project goal</p>
-                <p>기존 웹사이트보다 간결한 디자인으로 사용자의 편의성을 고려한 웹사이트를 제작합니다.<br>웹 / 모바일 등 디바이스에 최적화된 반응형 웹사이트를 제작하여 다양한 인터넷 환경에서 이용할 수 있도록 합니다.</p>
-            </div>
-
-        </section>
-        
-        <!-- color -->
-        <section class="color_wrap">
-            <h2><span class="num">06</span> color</h2>
-            <ul class="color">
-                <li>
-                    <div></div>
-                    <p><strong>R</strong> 245</p>
-                    <p><strong>G</strong> 247</p>
-                    <p><strong>B</strong> 249</p>
-                    <p>#f6f7f9</p>
-                </li>
-                <li>
-                    <div></div>
-                    <p><strong>R</strong> 216</p>
-                    <p><strong>G</strong> 221</p>
-                    <p><strong>B</strong> 229</p>
-                    <p>#d8dde5</p>
-                </li>
-                <li>
-                    <div></div>
-                    <p><strong>R</strong> 49</p>
-                    <p><strong>G</strong> 57</p>
-                    <p><strong>B</strong> 66</p>
-                    <p>#313942</p>
-                </li>
-                <li>
-                    <div></div>
-                    <p><strong>R</strong> 0</p>
-                    <p><strong>G</strong> 171</p>
-                    <p><strong>B</strong> 235</p>
-                    <p>#00abeb</p>
-                </li>
-            </ul>
-            <p>전체적으로 자연스럽고 조화로운 분위기를 주기 위해 색상을 최대한 배제하고,<br>브랜드 컬러인 Blue색으로 포인트를 주고, 전체적인 조화를 이루기 위해 푸른계열의 회색을 이용하였습니다.</p>
-        </section>
-
-        <!--typography-->
-        <section class="typo">
-            <h2><span class="num">07</span> Typography</h2>
-            <div class="font_box">
+            <div class="main_image">메인 이미지</div>
+        </header>
+        <main>
+            <!-- overview -->
+            <section class="intro overview">
+                <h2><span class="num">01</span> overview</h2>
+                <h3 class="project_title" data-aos="fade-up">더랩바이블랑두 웹사이트 리디자인</h3>
+                <ul>
+                    <li data-aos="fade-up">
+                        <span>프로젝트 설명:</span>화장품 브랜드 더랩바이블랑두의 웹 / 모바일 사이트 리디자인
+                    </li>
+                    <li data-aos="fade-up"><span>프로젝트 제작 기간:</span>2021.02.08 ~ 2021.02.22</li>
+                    <li data-aos="fade-up"><span>프로젝트 유형:</span>반응형 웹 사이트 디자인 & 구축</li>
+                    <li data-aos="fade-up"><span>프로젝트 참여도:</span>개인 프로젝트 100%</li>
+                </ul>
+            </section>
+            <!-- problem -->
+            <section class="problem">
+                <h2><span class="num">02</span> problem</h2>
                 <div>
-                    <p>기본 서체는 가독성이 좋고 깔끔한 Noto Sans를 선택하였습니다.<br>정보의 중요도에 따라 다양한 굵기의 폰트를 사용했습니다. </p>
-                    <p>타이틀 메뉴 등 포인트가 되는 부분에는 Noto Serif를 선택하여
-                        단조로울 수 있는 디자인에 변화를 주어 강조되어 보일 수 있도록 
-                        디자인하고자 하였습니다.</p>
+                    <h3 data-aos="flip-up">오래된 스타일의 웹페이지</h3>
+                    <p>옛스타일의 웹페이지로 특별한 내용이 없고 판매 위주로 보이는 짧고 간결한 메인페이지였다.</p>
                 </div>
-                <img src="images/des/font.png" alt="Noto Sans font">
-            </div>
-        </section>
+                <div>
+                    <h3 data-aos="flip-up">자세히 보아야 보이는 브랜드</h3>
+                    <p>제품에 대한 특성이나 브랜드의 가치관 등 어떠한 제품을 생산하며 목표하는지 한 눈에 볼 수 없다.</p>
+                </div>
+            </section>
+            <!-- publishing -->
+            <section class="publishing">
+                <h2><span class="num">03</span> publishing<span class="light"> *메인페이지 제작</span></h2>
+                <ul class="img" data-aos="fade-up">
+                    <li><img src="images/des/pub1.png" alt="pc1" /></li>
+                    <li><img src="images/des/pub2.png" alt="pc2" /></li>
+                    <li><img src="images/des/pub3.png" alt="모바일1" /></li>
+                    <li><img src="images/des/pub4.png" alt="모바일2" /></li>
+                    <li><img src="images/des/pub5.png" alt="모바일3" /></li>
+                </ul>
+                <ul class="txt">
+                    <li>
+                        <span>반응형 구현</span>PC - 1920X1080px (chrome 브라우저 최적화) / Mobile - 375X812px 에 최적화
+                    </li>
+                    <li>
+                        <span>슬라이드</span>자동 재생되어 바로 보이는 첫화면 최상단 이벤트 이미지 슬라이드 animation
+                        효과 구현
+                    </li>
+                    <li><span>웹폰트</span>CDN을 이용한 웹폰트로 서버 응답 시간 향상</li>
+                    <li><span>CSS</span>CSS를 이용한 전반적인 디자인과 동일한 꾸밈값 적용</li>
+                </ul>
+                <p>* HTML5 , CSS3 를 사용하여 사용자 시선의 접근성과 웹표준을 준수하며 제작하였습니다</p>
+            </section>
+            <!-- point -->
+            <section class="point">
+                <h2><span class="num">04</span> HTML markup point</h2>
+                <p>
+                    HTML 재구현 시 필수적으로 웹 표준 및 접근성을 준수하였으며, 모바일로 변경하여도 무리없게 볼 수
+                    있도록 반응형으로 작업하였습니다.
+                </p>
+                <ul>
+                    <li data-aos="fade-up"># 웹 표준 준수</li>
+                    <li data-aos="fade-up"># 웹 접근성 준수</li>
+                    <li data-aos="fade-up"># 반응형 웹페이지</li>
+                </ul>
+            </section>
 
-        <!-- 주요기능 및 시각화 -->
-        <section class="main_function">
-            <h2><span class="num">08</span> 주요기능 및 시각화</h2>
-            <div class="point1">
-                <img src="images/des/pt1.png" alt="point1" data-aos="fade-up">
-                <div class="txt">
-                    <h3>point 01</h3>
-                    <div>
-                        <p>#슬라이드</p>
-                        <p>#애니메이션</p>
-                        <p>#메인제품강조</p>
-                    </div>
+            <!-- design concept -->
+            <section class="design_concept">
+                <h2><span class="num">05</span> design concept</h2>
+                <ul class="keyword">
+                    <li><strong>simple</strong>심플한,간단한</li>
+                    <li><strong>nature</strong>자연,친근한,조화</li>
+                    <li><strong>pure</strong>깨끗한,청량한,순수</li>
+                </ul>
+                <p>브랜드 비전에 맞춰 간결한 디자인, 자연친화적 , 깨끗하고 청량한 느낌의 디자인으로 제작합니다.</p>
+
+                <div data-aos="fade-up">
+                    <p>project goal</p>
                     <p>
-                        모바일 버전에서 작게 보여질 수 있는 메인제품의 크기를 키워 강조하고, 슬라이드 애니메이션을 주어  강조 효과를 높였습니다.
+                        기존 웹사이트보다 간결한 디자인으로 사용자의 편의성을 고려한 웹사이트를 제작합니다.<br />웹 /
+                        모바일 등 디바이스에 최적화된 반응형 웹사이트를 제작하여 다양한 인터넷 환경에서 이용할 수 있도록
+                        합니다.
                     </p>
                 </div>
-            </div>
-            <div class="point2">
-                <div class="txt">
-                    <h3>point 02</h3>
-                    <div>
-                        <p>#동영상</p>
-                        <p>#소개</p>
-                        <p>#감각적인디자인</p>
-                    </div>
-                    <p>
-                        감각적인 디자인으로 브랜드를 소개하며, 브랜드 제품을 대표하는 동영상을 삽입하여 감성적인 소개글을 구성하였습니다.
-                    </p>
-                </div>
-                <img src="images/des/pt2.png" alt="point1" data-aos="fade-up">
-            </div>
-        </section>
-    </main>
-    <footer>
-        <ul class="btn_wrap">
-            <li><a href="thelab.pdf" target="_blank">PDF File</a></li>
-            <li><a href="thelab_web.html" target="_blank">Website</a></li>
-        </ul>
-    </footer>
+            </section>
 
-    <script src="../common/aos.js"></script>
-    <script>
-        AOS.init({
-          easing: 'ease-in-out-sine'
-        });
-      </script>  
-</body>
+            <!-- color -->
+            <section class="color_wrap">
+                <h2><span class="num">06</span> color</h2>
+                <ul class="color">
+                    <li>
+                        <div></div>
+                        <p><strong>R</strong> 245</p>
+                        <p><strong>G</strong> 247</p>
+                        <p><strong>B</strong> 249</p>
+                        <p>#f6f7f9</p>
+                    </li>
+                    <li>
+                        <div></div>
+                        <p><strong>R</strong> 216</p>
+                        <p><strong>G</strong> 221</p>
+                        <p><strong>B</strong> 229</p>
+                        <p>#d8dde5</p>
+                    </li>
+                    <li>
+                        <div></div>
+                        <p><strong>R</strong> 49</p>
+                        <p><strong>G</strong> 57</p>
+                        <p><strong>B</strong> 66</p>
+                        <p>#313942</p>
+                    </li>
+                    <li>
+                        <div></div>
+                        <p><strong>R</strong> 0</p>
+                        <p><strong>G</strong> 171</p>
+                        <p><strong>B</strong> 235</p>
+                        <p>#00abeb</p>
+                    </li>
+                </ul>
+                <p>
+                    전체적으로 자연스럽고 조화로운 분위기를 주기 위해 색상을 최대한 배제하고,<br />브랜드 컬러인
+                    Blue색으로 포인트를 주고, 전체적인 조화를 이루기 위해 푸른계열의 회색을 이용하였습니다.
+                </p>
+            </section>
+
+            <!--typography-->
+            <section class="typo">
+                <h2><span class="num">07</span> Typography</h2>
+                <div class="font_box">
+                    <div>
+                        <p>
+                            기본 서체는 가독성이 좋고 깔끔한 Noto Sans를 선택하였습니다.<br />정보의 중요도에 따라
+                            다양한 굵기의 폰트를 사용했습니다.
+                        </p>
+                        <p>
+                            타이틀 메뉴 등 포인트가 되는 부분에는 Noto Serif를 선택하여 단조로울 수 있는 디자인에 변화를
+                            주어 강조되어 보일 수 있도록 디자인하고자 하였습니다.
+                        </p>
+                    </div>
+                    <img src="images/des/font.png" alt="Noto Sans font" />
+                </div>
+            </section>
+
+            <!-- 주요기능 및 시각화 -->
+            <section class="main_function">
+                <h2><span class="num">08</span> 주요기능 및 시각화</h2>
+                <div class="point1">
+                    <img src="images/des/pt1.png" alt="point1" data-aos="fade-up" />
+                    <div class="txt">
+                        <h3>point 01</h3>
+                        <div>
+                            <p>#슬라이드</p>
+                            <p>#애니메이션</p>
+                            <p>#메인제품강조</p>
+                        </div>
+                        <p>
+                            모바일 버전에서 작게 보여질 수 있는 메인제품의 크기를 키워 강조하고, 슬라이드 애니메이션을
+                            주어 강조 효과를 높였습니다.
+                        </p>
+                    </div>
+                </div>
+                <div class="point2">
+                    <div class="txt">
+                        <h3>point 02</h3>
+                        <div>
+                            <p>#동영상</p>
+                            <p>#소개</p>
+                            <p>#감각적인디자인</p>
+                        </div>
+                        <p>
+                            감각적인 디자인으로 브랜드를 소개하며, 브랜드 제품을 대표하는 동영상을 삽입하여 감성적인
+                            소개글을 구성하였습니다.
+                        </p>
+                    </div>
+                    <img src="images/des/pt2.png" alt="point1" data-aos="fade-up" />
+                </div>
+            </section>
+        </main>
+        <footer>
+            <ul class="btn_wrap">
+                <li><a href="thelab.pdf" target="_blank">PDF File</a></li>
+                <li><a href="thelab_web.html" target="_blank">Website</a></li>
+            </ul>
+        </footer>
+
+        <script src="../common/js/aos.js"></script>
+        <script>
+            AOS.init({
+                easing: "ease-in-out-sine"
+            });
+        </script>
+    </body>
 </html>

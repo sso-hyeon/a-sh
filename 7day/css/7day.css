@@ -3,7 +3,7 @@
 /* common */
 body {
     text-transform: capitalize;
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: "Noto Sans KR", sans-serif;
     font-weight: 300;
     line-height: 1.5;
     font-size: 15px;
@@ -46,12 +46,12 @@ img {
     border-radius: 20px;
     line-height: 40px;
     font-weight: 700;
-    background: url(../../images/icon-09.png) no-repeat 93%/cover;
+    background: url(../../images/icon-09.png) no-repeat 93% / cover;
     background-size: 13px;
 }
 
 .title a:hover {
-    background: url(../../images/icon_w-09.png) no-repeat 93%/cover #000;
+    background: url(../../images/icon_w-09.png) no-repeat 93% / cover #000;
     background-size: 13px;
     color: #fff;
 }
@@ -63,7 +63,7 @@ img {
     top: 30px;
     right: 30px;
     text-indent: -9999px;
-    background: url(../images/close.svg) no-repeat 50% 50%/contain;
+    background: url(../../images/close.svg) no-repeat 50% 50% / contain;
     z-index: 999;
 }
 
@@ -74,7 +74,7 @@ img {
 /* header */
 header .main_image {
     width: 100%;
-    background: url(images/main-03.jpg) no-repeat 50%/cover;
+    background: url(../images/main-03.jpg) no-repeat 50% / cover;
     text-indent: -9999px;
     height: 30vh;
 }
@@ -131,13 +131,13 @@ section h2 {
     font-size: 1rem;
 }
 
-section h2>.num {
+section h2 > .num {
     color: #d8dde5;
     font-size: 20px;
     margin-right: 20px;
 }
 
-section h2>.light {
+section h2 > .light {
     font-weight: 400;
 }
 
@@ -242,7 +242,6 @@ section h2>.light {
     height: 170px;
 }
 
-
 .problem .as_is {
     font-size: 14px;
     width: 35%;
@@ -290,7 +289,7 @@ section h2>.light {
     line-height: 1.5;
 }
 
-.vision h3>img {
+.vision h3 > img {
     display: none;
 }
 
@@ -385,7 +384,6 @@ section h2>.light {
     line-height: 1.5;
 }
 
-
 .color li:nth-child(1) div {
     background-color: #fd6e00;
 }
@@ -430,7 +428,7 @@ section h2>.light {
     margin: 0 auto 50px;
 }
 
-.info_input>img {
+.info_input > img {
     width: 90%;
     display: block;
     margin: 0 auto;

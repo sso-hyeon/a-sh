@@ -15,7 +15,7 @@ section h4 {
 .btn {
     text-align: center;
     font-size: 20px;
-    font-family: 'GmarketSansB';
+    font-family: "GmarketSansB";
     padding: 10px 0;
     border: solid #000 2px;
     box-shadow: -2px 3px 0 #000;
@@ -38,7 +38,7 @@ section h4 {
 /* header */
 header h1 {
     text-indent: -9999px;
-    background: url(images/logo.svg) no-repeat 50% 50%/contain;
+    background: url(../images/logo.svg) no-repeat 50% 50% / contain;
     width: 140px;
     height: 38px;
     margin-left: 20px;
@@ -56,8 +56,12 @@ header h1 {
 }
 
 /* click */
-.hamburger img.click { position: absolute; width: 50px; top: 6vh; right: 60px;}
-
+.hamburger img.click {
+    position: absolute;
+    width: 50px;
+    top: 6vh;
+    right: 60px;
+}
 
 .hamburger .bar {
     width: 33px;
@@ -128,7 +132,7 @@ header h1 {
     height: 15vh;
     font-size: 30px;
     border-top: 4px solid #000;
-    font-family: 'GmarketSansB';
+    font-family: "GmarketSansB";
     display: flex;
     align-items: center;
     color: #fff;
@@ -138,8 +142,17 @@ header h1 {
     box-sizing: border-box;
 }
 
-.menu li:first-child { position: relative; top: 0; left: 0;}
-.menu li:first-child .click { position: absolute; bottom: 10%; left: 50%; width: 50px;}
+.menu li:first-child {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.menu li:first-child .click {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    width: 50px;
+}
 
 .active {
     transform: translateX(0);
@@ -147,7 +160,7 @@ header h1 {
 
 /* 메인화면 */
 .home {
-    background: url(images/bg_m.jpg) no-repeat 50%/cover;
+    background: url(../images/bg_m.jpg) no-repeat 50% / cover;
     width: 100%;
     height: 90vh;
     overflow: hidden;
@@ -155,10 +168,10 @@ header h1 {
     padding-top: 10vh;
 }
 
-.home>.main_img {
-    background: url(images/main_model.png) no-repeat 50%/contain;
+.home > .main_img {
+    background: url(../images/main_model.png) no-repeat 50% / contain;
     width: 480px;
-    height:60%;
+    height: 60%;
     position: absolute;
     bottom: 10vh;
     text-indent: -9999px;
@@ -174,7 +187,7 @@ header h1 {
 }
 
 .txt h2 {
-    font-family: 'GmarketSansB';
+    font-family: "GmarketSansB";
     transform: rotate(1deg);
     font-size: 35px;
     background-color: #ffcf3e;
@@ -196,7 +209,7 @@ header h1 {
 }
 
 .txt h3 {
-    font-family: 'GmarketSansB';
+    font-family: "GmarketSansB";
     transform: rotate(-3deg);
     font-size: 22px;
     background-color: #fff;
@@ -257,7 +270,7 @@ header h1 {
     }
 }
 /* slide_text */
-.slide_text { 
+.slide_text {
     width: 100%;
     height: 90px;
     overflow: hidden;
@@ -290,7 +303,6 @@ header h1 {
     }
 }
 
-
 .marquee ul li {
     margin: 0 20px;
 }
@@ -314,7 +326,7 @@ header h1 {
 }
 
 .intro .head div:nth-child(1) {
-    background: url(images/logo.png) no-repeat 100%/contain;
+    background: url(../images/logo.png) no-repeat 100% / contain;
     width: 193px;
     height: 52px;
     text-indent: -9999px;
@@ -322,7 +334,7 @@ header h1 {
 }
 
 .intro .head div:nth-child(2) {
-    background: url(images/handdeco.png) no-repeat 100%/contain;
+    background: url(../images/handdeco.png) no-repeat 100% / contain;
     width: 55px;
     height: 59px;
     animation: hello 1s linear infinite;
@@ -338,14 +350,13 @@ header h1 {
     animation-play-state: paused;
 }
 
-
 .intro h3 {
     margin-left: 25px;
     font-size: 25px;
     -webkit-text-stroke: 1px #000;
     color: #fff;
     text-shadow: -1px 2px 0 #000;
-    font-family: 'GmarketSansB';
+    font-family: "GmarketSansB";
 }
 
 /* intro marquee */
@@ -367,20 +378,19 @@ header h1 {
     display: flex;
     align-items: center;
 }
-.intro .marquee_container > .slide_marquee1 { 
+.intro .marquee_container > .slide_marquee1 {
     background-color: #5c9fdb;
     transform: rotate(1deg);
 }
-.intro .marquee_container > .slide_marquee2 { 
+.intro .marquee_container > .slide_marquee2 {
     background-color: #d2e8e1;
     transform: rotate(-1deg);
     color: #000;
 }
-.intro .marquee_container > .slide_marquee3 { 
+.intro .marquee_container > .slide_marquee3 {
     background-color: #ff6f7a;
     transform: rotate(1deg);
 }
-
 
 .intro .marquee_container > div > ul {
     margin: 20px auto;
@@ -400,13 +410,19 @@ header h1 {
     text-align: center;
     position: relative;
 }
-.video .video_box { height: 210px; padding-top: 100px; width: 90%; margin: 0 auto; position: relative;}
+.video .video_box {
+    height: 340px;
+    /* padding-top: 100px; */
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+}
 
 .video .video_title {
     border: 2px solid #000;
     background-color: #fff;
     box-shadow: -2px 3px #000;
-    font-family: 'GmarketSansB';
+    font-family: "GmarketSansB";
     padding: 7px 18px;
     display: inline-block;
     margin-bottom: -20px;
@@ -417,12 +433,13 @@ header h1 {
 .video iframe {
     border: 2px solid #000;
     box-shadow: -2px 3px #000;
-    width: 100%; height: 90%;
+    width: 100%;
+    height: 90%;
     box-sizing: border-box;
 }
 
 .video .video_deco1 {
-    background: url(images/heart_deco.png) no-repeat 50%/contain;
+    background: url(../images/heart_deco.png) no-repeat 50% / contain;
     width: 80px;
     height: 80px;
     position: absolute;
@@ -431,7 +448,7 @@ header h1 {
 }
 
 .video .video_deco2 {
-    background: url(images/dot_w.png) no-repeat 50%/contain;
+    background: url(../images/dot_w.png) no-repeat 50% / contain;
     width: 85px;
     height: 85px;
     position: absolute;
@@ -441,16 +458,17 @@ header h1 {
 
 /* event */
 .event {
-    padding-bottom: 50px;
+    padding-bottom: 80px;
     background-color: #ff6f7a;
     overflow: hidden;
 }
 
 /* swiper */
 .swiper-container {
+    position: relative;
     width: 90%;
-    height: 55vh;
-    margin-top: 5vh;
+    height: 45vh;
+    margin-top: 3vh;
     margin-left: auto;
     margin-right: auto;
 }
@@ -463,15 +481,15 @@ header h1 {
 }
 
 .swiper-container .swiper-wrapper .img1 {
-    background-image: url(images/event_m_1.jpg);
+    background-image: url(../images/event_m_1.jpg);
 }
 
 .swiper-container .swiper-wrapper .img2 {
-    background-image: url(images/event_m_2.jpg);
+    background-image: url(../images/event_m_2.jpg);
 }
 
 .swiper-container .swiper-wrapper .img3 {
-    background-image: url(images/event_m_3.jpg);
+    background-image: url(../images/event_m_3.jpg);
 }
 
 .swiper-pagination-bullet {
@@ -487,37 +505,41 @@ header h1 {
     background-color: #ffcf3e;
 }
 
+.swiper-container .swiper-pagination {
+    position: absolute;
+    bottom: -8%;
+}
 
 /* product list */
-section>.product {
+section > .product {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     justify-content: center;
 }
 
-section>.product li {
+section > .product li {
     width: 45%;
     margin: 30px 7.5px;
 }
 
-section>.product li>p:nth-of-type(1) {
+section > .product li > p:nth-of-type(1) {
     font-size: 12px;
-    font-family: 'GmarketSansL';
+    font-family: "GmarketSansL";
 }
 
-section>.product li>p:nth-of-type(2) {
+section > .product li > p:nth-of-type(2) {
     margin: 0;
     line-height: 1.5;
 }
 
-section>.product li>p:nth-of-type(2)>.cost {
+section > .product li > p:nth-of-type(2) > .cost {
     font-size: 10px;
     color: #a7a9ac;
     text-decoration: line-through;
 }
 
-section>.product li>p:nth-of-type(2)>.sale {
+section > .product li > p:nth-of-type(2) > .sale {
     display: block;
     background-color: #f15a29;
     width: 35px;
@@ -531,9 +553,16 @@ section>.product li>p:nth-of-type(2)>.sale {
     background-color: #d2e8e1;
     padding-bottom: 30px;
 }
-.product { position: relative;}
-.product .click2 { position: absolute; width: 50px; transform: rotate(90deg);top:20px; left: 0;}
-
+.product {
+    position: relative;
+}
+.product .click2 {
+    position: absolute;
+    width: 50px;
+    transform: rotate(90deg);
+    top: 20px;
+    left: 0;
+}
 
 /* best product */
 .best {
@@ -574,17 +603,17 @@ section>.product li>p:nth-of-type(2)>.sale {
 
 .instar .gallery img:nth-child(2) {
     top: 27px;
-    right: 17px;
+    right: 15vw;
 }
 
 .instar .gallery img:nth-child(3) {
     top: 80px;
-    left: 110px;
+    left: 30vw;
 }
 
 .instar .gallery img:nth-child(4) {
     top: 130px;
-    left: 22px;
+    left: 15vw;
 }
 
 .instar .gallery img:nth-child(5) {
@@ -594,17 +623,17 @@ section>.product li>p:nth-of-type(2)>.sale {
 
 .instar .gallery img:nth-child(6) {
     top: 220px;
-    left: 75px;
+    left: 25vw;
 }
 
 .instar .gallery img:nth-child(7) {
     bottom: 30px;
-    right: 45px;
+    right: 10vw;
 }
 
 .instar .gallery img:nth-child(8) {
-    bottom: 0;
-    left: 30px;
+    bottom: 20px;
+    left: 5vw;
 }
 .instar .eye_deco {
     width: 100px;
@@ -612,7 +641,6 @@ section>.product li>p:nth-of-type(2)>.sale {
     top: 10vh;
     left: 70%;
 }
-
 
 /* footer */
 footer {
@@ -632,9 +660,9 @@ footer .foot {
     justify-content: space-between;
     text-transform: capitalize;
 }
-footer .portfolio a { 
+footer .portfolio a {
     font-size: 13px;
-    font-family: 'GmarketSansM';
+    font-family: "GmarketSansM";
     line-height: 24px;
     width: 130px;
     height: 24px;
@@ -643,19 +671,19 @@ footer .portfolio a {
     border-radius: 12px;
     text-align: center;
 }
-footer .foot>div img {
+footer .foot > div img {
     width: 110px;
 }
 
-footer .foot>div p {
+footer .foot > div p {
     font-size: 8px;
 }
 
-footer .foot>ul {
+footer .foot > ul {
     font-size: 13px;
 }
 
-footer .foot>ul li {
+footer .foot > ul li {
     line-height: 2;
 }
 
