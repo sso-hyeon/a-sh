@@ -7,7 +7,15 @@
         <title>더랩바이블랑두</title>
         <!-- css -->
         <link rel="stylesheet" href="../common/css/reset.css" />
-        <link rel="stylesheet" href="./css/style.css" />
+        <link rel="stylesheet" href="/common/css/swiper.min.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+            integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" media="(max-width:769px)" href="./css/mb.css" />
 
         <!-- fonts -->
@@ -26,35 +34,40 @@
     <body>
         <!-- header -->
         <header>
-            <h1><a href="thelab_web.html">로고</a></h1>
+            <h1 class="logo"><a href="thelab_web.html">로고</a></h1>
             <!-- pc navigation -->
             <ul class="nav">
                 <li><a href="#">shop</a></li>
                 <li><a href="#">search</a></li>
                 <li>
-                    <a href="#">your order <span>0</span></a>
+                    <a href="#">your order <span class="count">0</span></a>
                 </li>
-                <li><a href="#">menu</a></li>
+                <li class="menuIcon"><a href="#">menu</a></li>
             </ul>
             <!-- mobile navigation -->
             <ul class="nav_m">
-                <li><a href="#">search</a></li>
-                <li><a href="#">0</a></li>
-                <li><a href="#">menu</a></li>
+                <li>
+                    <a href="#" class="searchIcon"><i class="fas fa-search"></i></a>
+                </li>
+                <li><a href="#" class="count">0</a></li>
+                <li class="menuIcon"><a href="#">menu</a></li>
             </ul>
         </header>
         <!-- main -->
         <main>
             <!-- slide -->
-            <section class="slider">
-                <div class="slide1">
-                    <h2>당신의 질문이 <br />첫번째 원료니까!<br />keep asking</h2>
+            <div class="swiper-container main-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slide1">
+                        <h2>당신의 질문이 <br />첫번째 원료니까!<br />keep asking</h2>
+                    </div>
+                    <div class="swiper-slide slide2">
+                        <h2>달라진 회원 혜택 <br />지금 바로 누려보세요!<br /><span>더랩 바이 블랑두 공식몰</span></h2>
+                    </div>
+                    <div class="swiper-slide slide3"></div>
                 </div>
-                <div class="slide2">
-                    <h2>달라진 회원 혜택 <br />지금 바로 누려보세요!<br /><span>더랩 바이 블랑두 공식몰</span></h2>
-                </div>
-                <div class="slide3"></div>
-            </section>
+                <div class="swiper-pagination"></div>
+            </div>
             <!-- brand intro -->
             <div class="intro">
                 <img src="images/logo2.png" alt="로고" />
@@ -342,5 +355,6 @@
 
         <!-- script -->
         <script src="../common/js/swiper.min.js"></script>
+        <script src="js/swiper.js"></script>
     </body>
 </html>
