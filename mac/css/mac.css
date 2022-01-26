@@ -93,10 +93,12 @@ header .menu {
     justify-content: space-between;
     transform: translateX(100%);
     transition: 0.6s;
+    opacity: 0;
 }
 
 header .menu.active {
     transform: translateX(0);
+    opacity: 1;
 }
 
 .menu .box1 {
