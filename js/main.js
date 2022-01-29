@@ -1,5 +1,13 @@
 let windowWidth = window.innerWidth;
 
+window.addEventListener("resize", function () {
+    if (this.innerWidth < 768) {
+        location.href = "./index_m.html";
+    } else {
+        location.href = "./index.html";
+    }
+});
+
 window.addEventListener("DOMContentLoaded", function () {
     AOS.init({
         easing: "ease-in-out-sine"

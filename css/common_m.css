@@ -71,11 +71,13 @@ header > p {
     flex-direction: column;
     justify-content: space-between;
     transform: translateX(100%);
-    transition: 0.3s;
+    opacity: 0;
+    transition: 0.3s transform;
 }
 
 .active {
     transform: translateX(0%);
+    opacity: 1;
 }
 
 .nav_header > p {
