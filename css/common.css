@@ -1,42 +1,136 @@
 @charset "utf-8";
 
-body { text-transform: capitalize; font-family: 'Noto Sans KR', sans-serif; font-weight: 300;}
-::selection {background-color: #c0c0c0;}
-a { text-decoration: none; color: inherit; display: block;}
-ul { list-style: none; padding:0; margin: 0;} 
+body {
+    text-transform: capitalize;
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 300;
+}
+::selection {
+    background-color: #c0c0c0;
+}
 
-h1,h2,h3,p { margin: 0;}
+body::-webkit-scrollbar {
+    width: 10px;
+}
+body::-webkit-scrollbar-thumb {
+    height: 10%;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
 
 /*** header ***/
 header {
-    width: 15%; height: 100vh;
-    position: fixed; background-color: #fff;  
-    box-sizing: border-box; top: 0;
-    padding:70px 0 70px 80px;
-    display: flex; flex-direction: column;
+    width: 15%;
+    height: 100vh;
+    position: fixed;
+    background-color: #fff;
+    box-sizing: border-box;
+    top: 0;
+    padding: 70px 0 70px 80px;
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
 }
-header > h1 { font-size: 3.75rem; font-weight: 400;}
-header > h1, header > div > p { text-transform: uppercase;}
+header > h1 {
+    font-size: 3.75rem;
+    font-weight: 400;
+}
+header > h1,
+header > div > p {
+    text-transform: uppercase;
+}
 
-header .nav { font-weight: 700; font-size: 1.5rem; margin-bottom: 100px;}
-header .nav > li { margin-top: 12px; color: #c0c0c0;}
-header .nav > li:first-child { color: #000;}
-header .nav > li:hover { color: #000;}
+header .nav {
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 100px;
+}
+header .nav > li {
+    margin-top: 12px;
+    color: #c0c0c0;
+}
+header .nav > li:first-child {
+    color: #000;
+}
+header .nav > li:hover {
+    color: #000;
+}
 
 /*** .lnb ***/
-.lnb { margin-left: 15%; display: flex; height: 130px; align-items: flex-end; width: 100%; position: fixed; top: 0; background-color: #fff; box-sizing: border-box; padding-bottom: 10px; padding-left: 45px; z-index: 1;}
-.lnb > ul { display: flex; width: 500px; justify-content: space-between; border-bottom: 1px solid #c0c0c0;}
-.lnb li { color: #c0c0c0; padding-bottom: 10px; font-weight: 400;}
-.lnb li:hover { color: #000;}
-
+.lnb {
+    margin-left: 15%;
+    display: flex;
+    height: 130px;
+    align-items: flex-end;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    box-sizing: border-box;
+    padding-bottom: 10px;
+    padding-left: 45px;
+    z-index: 1;
+}
+.lnb > ul {
+    display: flex;
+    width: 500px;
+    justify-content: space-between;
+    border-bottom: 1px solid #c0c0c0;
+}
+.lnb li {
+    color: #c0c0c0;
+    padding-bottom: 10px;
+    font-weight: 400;
+}
+.lnb li:hover {
+    color: #000;
+}
 
 /*** footer ***/
-footer { margin-left: 15%; background-color: #f2f2f2;}
-footer > div { padding: 50px 45px; box-sizing: border-box;}
+footer {
+    margin-left: 15%;
+    background-color: #f2f2f2;
+}
+footer > div {
+    padding: 50px 45px;
+    box-sizing: border-box;
+}
 
-footer > .txt1 { border-bottom: 2px solid #fff;}
-footer > .txt1 > h3 { font-size: 2.5rem; font-weight: 700;}
-footer > .txt1 > p { text-transform: initial; font-size: 1.563rem; margin-top: 50px;}
+footer > .txt1 {
+    border-bottom: 2px solid #fff;
+}
+footer > .txt1 > h3 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+footer > .txt1 > p {
+    text-transform: initial;
+    font-size: 1.563rem;
+    margin-top: 50px;
+}
 
-footer > .txt2 { padding: 35px 45px; font-size: 0.813rem; text-transform: initial; line-height: 1.5; color: #696d73;}
+footer > .txt2 {
+    padding: 35px 45px;
+    font-size: 0.813rem;
+    text-transform: initial;
+    line-height: 1.5;
+    color: #696d73;
+}

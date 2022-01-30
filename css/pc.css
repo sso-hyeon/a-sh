@@ -21,6 +21,10 @@
     cursor: zoom-in;
 }
 
+.slide:hover {
+    opacity: 0.8;
+}
+
 @keyframes move {
     100% {
         background-position-y: -1400px;
@@ -37,7 +41,7 @@ main {
 }
 main > h1 {
     font-size: 6rem;
-    margin-top: 55vh;
+    margin-top: 52vh;
 }
 
 /* intro */
