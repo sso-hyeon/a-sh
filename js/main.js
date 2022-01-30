@@ -1,3 +1,8 @@
+const type = new Typewriter(".tag", {
+    autoStart: true, //자동 시작
+    loop: true //반복
+});
+
 let windowWidth = window.innerWidth;
 
 window.addEventListener("resize", function () {
@@ -20,11 +25,6 @@ window.addEventListener("DOMContentLoaded", function () {
             loop: true //반복(첫화면으로 자연스럽게 이동) false = 왼쪽으로 첫페이지로 다시 돌아가서 반복
         });
 
-        const type = new Typewriter(".tag", {
-            autoStart: true, //자동 시작
-            loop: true //반복
-        });
-
         type.typeString("#스마일")
             .pauseFor(600)
             .typeString("<br>")
@@ -35,11 +35,7 @@ window.addEventListener("DOMContentLoaded", function () {
             .pauseFor(1000)
             .start();
     } else {
-        const type = new Typewriter(".tag", {
-            autoStart: true, //자동 시작
-            loop: true //반복
-        });
-
+        goPortfolioPage();
         type.typeString("#스마일#성실함")
             .pauseFor(600)
             .typeString("<br>")
@@ -48,3 +44,11 @@ window.addEventListener("DOMContentLoaded", function () {
             .start();
     }
 });
+
+function goPortfolioPage() {
+    const slide = document.querySelector(".slide");
+
+    slide.addEventListener("click", function () {
+        location.href = "./portfolio.html";
+    });
+}

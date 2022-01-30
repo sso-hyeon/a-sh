@@ -2,8 +2,8 @@
 
 /*** slide ***/
 .slide {
-    padding: 20px;
     position: fixed;
+    padding: 0 20px;
     right: 0px;
     height: 100vh;
     overflow: hidden;
@@ -11,38 +11,20 @@
     background-color: #fff;
     z-index: 2;
 }
+
 .slide .gallery {
-    text-align: center;
-    animation: slide linear 8s infinite alternate;
-}
-/* .slide .gallery:hover {
-    animation-play-state: paused;
-} */
-
-@keyframes slide {
-    100% {
-        transform: translateY(-50vh);
-    }
-}
-.slide .gallery a {
-    margin: 10px 0;
     width: 330px;
-    height: 330px;
-    background: url(../images/pf_img1.jpg) no-repeat 50% 50% / cover;
-    text-indent: -9999px;
-}
-.slide .gallery li:nth-child(2) a {
-    background: url(../images/pf_img4.jpg) no-repeat 50% 50% / cover;
-}
-.slide .gallery li:nth-child(3) a {
-    background: url(../images/pf_img3.jpg) no-repeat 50% 50% / cover;
-}
-.slide .gallery li:nth-child(4) a {
-    background: url(../images/pf_img5.jpg) no-repeat 50% 50% / cover;
+    height: 1400px;
+    background-image: url(../images/slide.png);
+    background-size: contain;
+    animation: move linear 15s infinite;
+    cursor: zoom-in;
 }
 
-.slide .gallery a:hover {
-    opacity: 0.8;
+@keyframes move {
+    100% {
+        background-position-y: -1400px;
+    }
 }
 
 /*** main ***/
@@ -50,7 +32,8 @@ main {
     margin-left: 15%;
     padding-left: 45px;
     margin-top: 13vh;
-    width: 67%;
+    width: calc(85% - 370px);
+    box-sizing: border-box;
 }
 main > h1 {
     font-size: 6rem;
@@ -122,7 +105,7 @@ section .date {
     display: flex;
     margin-bottom: 170px;
     justify-content: space-between;
-    width: 90%;
+    width: 95%;
 }
 .skill_list > div {
     margin-top: 90px;
