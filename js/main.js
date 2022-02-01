@@ -5,13 +5,15 @@ const type = new Typewriter(".tag", {
 
 let windowWidth = window.innerWidth;
 
-window.addEventListener("DOMContentLoaded", function () {
+window.addEventListener("resize", function () {
     if (windowWidth < 1200) {
         location.href = "./index_m.html";
     } else {
         location.href = "./index.html";
     }
+});
 
+window.addEventListener("DOMContentLoaded", function () {
     AOS.init({
         easing: "ease-in-out-sine"
     });
