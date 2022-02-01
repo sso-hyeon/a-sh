@@ -6,7 +6,7 @@ const type = new Typewriter(".tag", {
 let windowWidth = window.innerWidth;
 
 window.addEventListener("resize", function () {
-    if (this.innerWidth < 768) {
+    if (this.innerWidth < 1200) {
         location.href = "./index_m.html";
     } else {
         location.href = "./index.html";
@@ -18,12 +18,21 @@ window.addEventListener("DOMContentLoaded", function () {
         easing: "ease-in-out-sine"
     });
 
-    if (windowWidth < 768) {
-        const swiper = new Swiper(".swiper-container", {
-            autoplay: { delay: 1500 }, //자동 슬라이드
-            spaceBetween: 30, //이미지 사이
-            loop: true //반복(첫화면으로 자연스럽게 이동) false = 왼쪽으로 첫페이지로 다시 돌아가서 반복
-        });
+    if (windowWidth < 1200) {
+        if (768 <= windowWidth) {
+            const swiper = new Swiper(".swiper-container", {
+                slidesPerView: 3,
+                autoplay: { delay: 1500, disableOnInteraction: false },
+                spaceBetween: 25,
+                loop: true
+            });
+        } else {
+            const swiper = new Swiper(".swiper-container", {
+                autoplay: { delay: 1500, disableOnInteraction: false },
+                spaceBetween: 30,
+                loop: true
+            });
+        }
 
         type.typeString("#스마일")
             .pauseFor(600)

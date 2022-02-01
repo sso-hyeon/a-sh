@@ -14,6 +14,13 @@
         <meta property="og:url" content="https://sso-hyeon.github.io/a-sh/" />
 
         <title>A-SH portfolio</title>
+        <script>
+            let windowInnerWidth = window.innerWidth;
+            if (windowInnerWidth >= 1200) {
+                location.href = "./portfolio.html";
+            }
+        </script>
+
         <link rel="stylesheet" href="./common/css/reset.css" />
         <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
@@ -159,7 +166,6 @@
                 <p>&copy; So Hyeon Ann all rights reserved.</p>
             </div>
         </footer>
-
         <script src="./js/menu.js"></script>
     </body>
 </html>

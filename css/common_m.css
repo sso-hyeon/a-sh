@@ -10,6 +10,15 @@ body {
     background-color: #c0c0c0;
 }
 
+body::-webkit-scrollbar {
+    width: 10px;
+}
+body::-webkit-scrollbar-thumb {
+    height: 10%;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -205,7 +214,7 @@ footer > .txt2 {
 }
 
 #nav-icon4 span:nth-child(2) {
-    bottom: 8.5px;
+    bottom: 8.75px;
     -webkit-transform-origin: left center;
     -moz-transform-origin: left center;
     -o-transform-origin: left center;
