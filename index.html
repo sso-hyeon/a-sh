@@ -31,20 +31,6 @@
         <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png" />
         <link rel="manifest" href="./favicon/site.webmanifest" />
-
-        <script>
-            let userAgent = navigator.userAgent;
-
-            //스마트폰 구분
-            let smartPhone = ["iphone", "ipad", "android"];
-            for (let i in smartPhone) {
-                //.toLowerCase();소문자로 변환
-                if (navigator.userAgent.toLowerCase().match(new RegExp(smartPhone[i]))) {
-                    //alert('모바일 페이지로 이동합니다.');
-                    location.href = "./index_m.html";
-                }
-            }
-        </script>
     </head>
     <body>
         <!-- 좌측 내비게이션 -->
@@ -105,14 +91,7 @@
             </section>
 
             <!-- tag -->
-            <div class="tag">
-                <!--
-            <li>#스마일</li>
-            <li>#성실함</li>
-            <li>#배려</li>
-            <li>#소통</li>
-            <li>#차분함</li>
-            --></div>
+            <div class="tag"></div>
 
             <!-- education -->
             <section class="edu" id="edu">
@@ -198,7 +177,6 @@
             </div>
         </footer>
 
-        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
         <!-- aos script -->
         <script src="./common/js/aos.js"></script>
         <!-- typewriter js -->

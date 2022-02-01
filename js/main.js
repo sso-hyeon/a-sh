@@ -7,9 +7,9 @@ let windowWidth = window.innerWidth;
 
 window.addEventListener("resize", function () {
     if (windowWidth < 1200) {
-        location.href = "./index_m.html";
+        location.href = "../index_m.html";
     } else {
-        location.href = "./index.html";
+        location.href = "../index.html";
     }
 });
 
@@ -58,6 +58,6 @@ function goPortfolioPage() {
     const slide = document.querySelector(".slide");
 
     slide.addEventListener("click", function () {
-        location.href = "./portfolio.html";
+        location.href = "../portfolio.html";
     });
 }

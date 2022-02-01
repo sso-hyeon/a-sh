@@ -25,19 +25,6 @@ a {
     display: block;
 }
 
-ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-h1,
-h2,
-h3,
-p {
-    margin: 0;
-}
-
 /*** header ***/
 header {
     width: 100%;
