@@ -7,9 +7,9 @@ let windowWidth = window.innerWidth;
 
 window.addEventListener("resize", function () {
     if (windowWidth < 1200) {
-        location.href = "../index_m.html";
+        location.href = "https://sso-hyeon.github.io/a-sh/index_m.html";
     } else {
-        location.href = "../index.html";
+        location.href = "https://sso-hyeon.github.io/a-sh/index.html";
     }
 });
 
@@ -18,16 +18,18 @@ window.addEventListener("DOMContentLoaded", function () {
         easing: "ease-in-out-sine"
     });
 
+    let swiper;
+
     if (windowWidth < 1200) {
         if (768 <= windowWidth) {
-            const swiper = new Swiper(".swiper-container", {
+            swiper = new Swiper(".swiper-container", {
                 slidesPerView: 3,
                 autoplay: { delay: 1500, disableOnInteraction: false },
                 spaceBetween: 25,
                 loop: true
             });
         } else {
-            const swiper = new Swiper(".swiper-container", {
+            swiper = new Swiper(".swiper-container", {
                 autoplay: { delay: 1500, disableOnInteraction: false },
                 spaceBetween: 30,
                 loop: true
@@ -58,6 +60,6 @@ function goPortfolioPage() {
     const slide = document.querySelector(".slide");
 
     slide.addEventListener("click", function () {
-        location.href = "../portfolio.html";
+        location.href = "https://sso-hyeon.github.io/a-sh/portfolio.html";
     });
 }
