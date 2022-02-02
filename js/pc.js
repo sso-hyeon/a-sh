@@ -7,7 +7,7 @@ let windowWidth = window.innerWidth;
 
 window.addEventListener("resize", function () {
     if (windowWidth < 1200) {
-        location.href = "https://sso-hyeon.github.io/a-sh/index_m.html";
+        location.href = "./index_m.html";
     }
 });
 
