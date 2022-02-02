@@ -5,13 +5,9 @@ const type = new Typewriter(".tag", {
 
 let windowWidth = window.innerWidth;
 
-window.addEventListener("resize", function () {
-    if (windowWidth >= 1200) {
-        location.href = "https://sso-hyeon.github.io/a-sh/index.html";
-    }
-});
-
 window.addEventListener("DOMContentLoaded", function () {
+    if (windowWidth >= 1200) location.href = "https://sso-hyeon.github.io/a-sh/index.html";
+
     AOS.init({
         easing: "ease-in-out-sine"
     });
