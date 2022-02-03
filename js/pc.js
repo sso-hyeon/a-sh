@@ -3,8 +3,6 @@ const type = new Typewriter(".tag", {
     loop: true //반복
 });
 
-let windowWidth = window.innerWidth;
-
 window.addEventListener("resize", function () {
     if (this.innerWidth < 1200) {
         location.href = "./index_m.html";
@@ -12,7 +10,7 @@ window.addEventListener("resize", function () {
 });
 
 window.addEventListener("DOMContentLoaded", function () {
-    if (windowWidth < 1200) location.href = "./index_m.html";
+    if (this.innerWidth < 1200) location.href = "./index_m.html";
 
     AOS.init({
         easing: "ease-in-out-sine"
