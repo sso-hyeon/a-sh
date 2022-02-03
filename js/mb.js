@@ -3,24 +3,38 @@ const type = new Typewriter(".tag", {
     loop: true //반복
 });
 
-let windowWidth = window.innerWidth;
-
 window.addEventListener("resize", function () {
     if (this.innerWidth > 1200) {
         location.href = "./index.html";
     }
+
+    resizeSwiper();
 });
 
 window.addEventListener("DOMContentLoaded", function () {
-    if (windowWidth >= 1200) location.href = "./index.html";
+    if (this.innerWidth >= 1200) location.href = "./index.html";
 
     AOS.init({
         easing: "ease-in-out-sine"
     });
 
     let swiper;
+    resizeSwiper();
 
-    if (768 <= windowWidth) {
+    type.typeString("#스마일")
+        .pauseFor(600)
+        .typeString("<br>")
+        .typeString("#성실함#배려")
+        .pauseFor(600)
+        .typeString("<br>")
+        .typeString("#소통#차분함")
+        .pauseFor(1000)
+        .start();
+});
+
+function resizeSwiper() {
+    console.log(this.innerWidth);
+    if (768 <= this.innerWidth) {
         swiper = new Swiper(".swiper-container", {
             slidesPerView: 3,
             autoplay: { delay: 1500, disableOnInteraction: false },
@@ -34,14 +48,4 @@ window.addEventListener("DOMContentLoaded", function () {
             loop: true
         });
     }
-
-    type.typeString("#스마일")
-        .pauseFor(600)
-        .typeString("<br>")
-        .typeString("#성실함#배려")
-        .pauseFor(600)
-        .typeString("<br>")
-        .typeString("#소통#차분함")
-        .pauseFor(1000)
-        .start();
-});
+}
