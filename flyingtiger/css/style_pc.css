@@ -148,24 +148,15 @@ header .search_box input {
     margin: 25px auto;
     bottom: 10px;
     height: 70px;
+    width: 2071px;
     left: -10px;
+    animation: 8s marquee_pc linear infinite;
 }
 
-.marquee ul {
-    line-height: 70px;
-    width: 100%;
-    animation: 20s slide1 linear infinite;
-    transform: translateX(100%);
-}
-
-@keyframes slide1 {
+@keyframes marquee_pc {
     100% {
-        transform: translateX(-100%);
+        background-position-x: -2071px;
     }
-}
-
-.marquee ul li {
-    margin: 0 50px;
 }
 
 /* 소개페이지 */
