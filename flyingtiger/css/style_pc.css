@@ -194,24 +194,19 @@ header .search_box input {
     padding: 40px 0;
 }
 .intro .marquee_container > div {
+    width: 2300px;
     height: 115px;
-    font-size: 35px;
-}
-.intro .marquee_container > .slide_marquee2 {
-    margin-top: -50px;
-    margin-bottom: 50px;
 }
 
-.intro .marquee_container > div > ul {
-    margin: 20px auto;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
+@keyframes txtSlide-left {
+    100% {
+        background-position-x: -2300px;
+    }
 }
-
-.intro .marquee_container > div > .slide_txt2 {
-    transform: translateX(-5%);
+@keyframes txtSlide-right {
+    100% {
+        background-position-x: 2300px;
+    }
 }
 
 /* video */
