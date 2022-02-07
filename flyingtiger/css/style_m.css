@@ -273,7 +273,6 @@ header h1 {
 .slide_text {
     width: 100%;
     height: 90px;
-    overflow: hidden;
     position: absolute;
     bottom: 8vh;
 }
@@ -282,35 +281,17 @@ header h1 {
     position: absolute;
     bottom: 10px;
     height: 56px;
-    width: 110%;
+    width: 1657px;
     transform: rotate(-2deg);
+    background: url(../images/slide1.png) center / cover;
     background-color: #d2e8e1;
+    animation: 8s marquee linear infinite;
 }
 
-.marquee ul {
-    display: flex;
-    justify-content: space-between;
-    line-height: 56px;
-    text-transform: capitalize;
-    width: 350%;
-    animation: 8s slide1 linear infinite;
-    transform: translateX(25%);
-}
-
-@keyframes slide1 {
+@keyframes marquee {
     100% {
-        transform: translateX(-100%);
+        background-position-x: -1657px;
     }
-}
-
-.marquee ul li {
-    margin: 0 20px;
-}
-
-.marquee img {
-    width: 35px;
-    vertical-align: middle;
-    margin: 0 20px;
 }
 
 /* 소개페이지 */
