@@ -32,18 +32,10 @@ $(function () {
         swiper.autoplay.start();
     });
 
-    var windowWidth = $(window).width();
-
-    if (windowWidth < 768) {
-    } else {
-    }
-
     $(".btn").click(function () {
         $(this).prev().children().removeClass("btn_hide");
         $(this).css("display", "none");
     });
-
-    $(".hamburger").on("click", function () {});
 
     $(".hamburger").click(function () {
         $(this).children().toggleClass("open");
@@ -181,4 +173,10 @@ $(function () {
             $(this).attr({ src: "images/best8.jpg" });
         }
     );
+});
+
+window.addEventListener("scroll", function () {
+    document.querySelector(".slide_marquee1").style.backgroundPositionX = "-" + this.scrollY / 2 + "px";
+    document.querySelector(".slide_marquee2").style.backgroundPositionX = this.scrollY / 2 + "px";
+    document.querySelector(".slide_marquee3").style.backgroundPositionX = "-" + this.scrollY / 2 + "px";
 });
