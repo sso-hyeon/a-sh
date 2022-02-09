@@ -198,17 +198,6 @@ header .search_box input {
     height: 115px;
 }
 
-@keyframes txtSlide-left {
-    100% {
-        background-position-x: -2300px;
-    }
-}
-@keyframes txtSlide-right {
-    100% {
-        background-position-x: 2300px;
-    }
-}
-
 /* video */
 .video {
     height: 100vh;

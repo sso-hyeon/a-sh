@@ -360,28 +360,14 @@ header h1 {
 .intro .marquee_container > .slide_marquee1 {
     background: url(../images/slide_txt1.png) center / cover;
     transform: rotate(1deg);
-    animation: 16s txtSlide-left linear infinite;
 }
 .intro .marquee_container > .slide_marquee2 {
     background: url(../images/slide_txt2.png) center / cover;
     transform: rotate(-1deg);
-    animation: 16s txtSlide-right linear infinite;
 }
 .intro .marquee_container > .slide_marquee3 {
     background: url(../images/slide_txt3.png) center / cover;
     transform: rotate(1deg);
-    animation: 16s txtSlide-left linear infinite;
-}
-
-@keyframes txtSlide-left {
-    100% {
-        background-position-x: -1200px;
-    }
-}
-@keyframes txtSlide-right {
-    100% {
-        background-position-x: 1200px;
-    }
 }
 
 /* video */
