@@ -1,4 +1,17 @@
 @charset "utf-8";
+::selection {
+    background-color: #c0c0c0;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+    background-color: #000;
+}
+body::-webkit-scrollbar-thumb {
+    height: 10%;
+    background-color: #fff;
+    border-radius: 10px;
+}
 
 .m_hide {
     display: block;
