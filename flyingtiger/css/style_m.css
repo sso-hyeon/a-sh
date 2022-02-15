@@ -448,15 +448,15 @@ header h1 {
 }
 
 .swiper-container .swiper-wrapper .img1 {
-    background-image: url(../images/event_m_1.jpg);
+    background-image: url(../images/banner/m/1.jpg);
 }
 
 .swiper-container .swiper-wrapper .img2 {
-    background-image: url(../images/event_m_2.jpg);
+    background-image: url(../images/banner/m/2.jpg);
 }
 
 .swiper-container .swiper-wrapper .img3 {
-    background-image: url(../images/event_m_3.jpg);
+    background-image: url(../images/banner/m/3.jpg);
 }
 
 .swiper-pagination-bullet {
