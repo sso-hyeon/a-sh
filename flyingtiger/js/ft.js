@@ -41,138 +41,32 @@ $(function () {
         $(this).children().toggleClass("open");
         $(".menu").toggleClass("active");
     });
+});
 
-    /* img hover_new */
-    $(".new1 img").hover(
-        function () {
-            $(this).attr({ src: "images/new_h.jpg" });
-        },
-        function () {
-            $(this).attr({ src: "images/new1.jpg" });
-        }
-    );
-    $(".new2 img").hover(
-        function () {
-            $(this).attr({ src: "images/new_h.jpg" });
-        },
-        function () {
-            $(this).attr({ src: "images/new2.jpg" });
-        }
-    );
-    $(".new3 img").hover(
-        function () {
-            $(this).attr({ src: "images/new_h.jpg" });
-        },
-        function () {
-            $(this).attr({ src: "images/new3.jpg" });
-        }
-    );
-    $(".new4 img").hover(
-        function () {
-            $(this).attr({ src: "images/new_h.jpg" });
-        },
-        function () {
-            $(this).attr({ src: "images/new4.jpg" });
-        }
-    );
-    $(".new5 img").hover(
-        function () {
-            $(this).attr({ src: "images/new_h.jpg" });
-        },
-        function () {
-            $(this).attr({ src: "images/new5.jpg" });
-        }
-    );
-    $(".new6 img").hover(
-        function () {
-            $(this).attr({ src: "images/new6_h.jpg" });
-        },
-        function () {
-            $(this).attr({ src: "images/new6.jpg" });
-        }
-    );
-    $(".new7 img").hover(
-        function () {
-            $(this).attr({ src: "images/new7_h.jpg" });
-        },
-        function () {
-            $(this).attr({ src: "images/new7.jpg" });
-        }
-    );
-    $(".new8 img").hover(
-        function () {
-            $(this).attr({ src: "images/new8_h.jpg" });
-        },
-        function () {
-            $(this).attr({ src: "images/new8.jpg" });
-        }
-    );
+const newItems = document.querySelectorAll(".new-item img");
+newItems.forEach((item, idx) => {
+    if (idx < 5) {
+        item.addEventListener("mouseover", function () {
+            this.setAttribute("src", "images/product/new/new_h.jpg");
+        });
+    } else {
+        item.addEventListener("mouseover", function () {
+            this.setAttribute("src", "images/product/new/new" + (idx + 1) + "_h.jpg");
+        });
+    }
+    item.addEventListener("mouseout", function () {
+        this.setAttribute("src", "images/product/new/new" + (idx + 1) + ".jpg");
+    });
+});
 
-    /* img hover_best */
-    $(".best1 img").hover(
-        function () {
-            $(this).attr({ src: "images/best1_h.jpg" });
-        },
-        function () {
-            $(this).attr({ src: "images/best1.jpg" });
-        }
-    );
-    $(".best2 img").hover(
-        function () {
-            $(this).attr({ src: "images/best2_h.jpg" });
-        },
-        function () {
-            $(this).attr({ src: "images/best2.jpg" });
-        }
-    );
-    $(".best3 img").hover(
-        function () {
-            $(this).attr({ src: "images/best3_h.jpg" });
-        },
-        function () {
-            $(this).attr({ src: "images/best3.jpg" });
-        }
-    );
-    $(".best4 img").hover(
-        function () {
-            $(this).attr({ src: "images/best4_h.jpg" });
-        },
-        function () {
-            $(this).attr({ src: "images/best4.jpg" });
-        }
-    );
-    $(".best5 img").hover(
-        function () {
-            $(this).attr({ src: "images/best5_h.jpg" });
-        },
-        function () {
-            $(this).attr({ src: "images/best5.jpg" });
-        }
-    );
-    $(".best6 img").hover(
-        function () {
-            $(this).attr({ src: "images/best6_h.jpg" });
-        },
-        function () {
-            $(this).attr({ src: "images/best6.jpg" });
-        }
-    );
-    $(".best7 img").hover(
-        function () {
-            $(this).attr({ src: "images/best7_h.jpg" });
-        },
-        function () {
-            $(this).attr({ src: "images/best7.jpg" });
-        }
-    );
-    $(".best8 img").hover(
-        function () {
-            $(this).attr({ src: "images/best8_h.jpg" });
-        },
-        function () {
-            $(this).attr({ src: "images/best8.jpg" });
-        }
-    );
+const bestItems = document.querySelectorAll(".best-item img");
+bestItems.forEach((item, idx) => {
+    item.addEventListener("mouseover", function () {
+        this.setAttribute("src", "images/product/best/best" + (idx + 1) + "_h.jpg");
+    });
+    item.addEventListener("mouseout", function () {
+        this.setAttribute("src", "images/product/best/best" + (idx + 1) + ".jpg");
+    });
 });
 
 window.addEventListener("scroll", function () {

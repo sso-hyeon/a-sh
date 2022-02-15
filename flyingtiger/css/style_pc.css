@@ -288,15 +288,15 @@ header .search_box input {
 }
 
 .swiper-container .swiper-wrapper .img1 {
-    background-image: url(../images/event_pc_1.jpg);
+    background-image: url(../images/banner/pc/1.jpg);
 }
 
 .swiper-container .swiper-wrapper .img2 {
-    background-image: url(../images/event_pc_2.jpg);
+    background-image: url(../images/banner/pc/2.jpg);
 }
 
 .swiper-container .swiper-wrapper .img3 {
-    background-image: url(../images/event_pc_3.jpg);
+    background-image: url(../images/banner/pc/3.jpg);
 }
 
 .swiper-button-next,
