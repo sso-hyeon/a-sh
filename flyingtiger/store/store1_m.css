@@ -202,6 +202,7 @@ section > .product li {
 }
 
 section > .product li > p:nth-of-type(1) {
+    margin-top: 10px;
     font-size: 12px;
     font-family: "GmarketSansL";
 }
