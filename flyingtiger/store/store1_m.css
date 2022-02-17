@@ -164,15 +164,15 @@ main nav ul {
 }
 
 .swiper-container .swiper-wrapper .img1 {
-    background-image: url(../images/store_banner1_m.jpg);
+    background-image: url(img/banner/m/1.jpg);
 }
 
 .swiper-container .swiper-wrapper .img2 {
-    background-image: url(../images/store_banner2_m.jpg);
+    background-image: url(img/banner/m/2.jpg);
 }
 
 .swiper-container .swiper-wrapper .img3 {
-    background-image: url(../images/store_banner3_m.jpg);
+    background-image: url(img/banner/m/3.jpg);
 }
 
 /* section */
