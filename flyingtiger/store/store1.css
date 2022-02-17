@@ -209,15 +209,15 @@ main nav ul {
 }
 
 .swiper-container .swiper-wrapper .img1 {
-    background-image: url(../images/store_banner1.jpg);
+    background-image: url(img/banner/pc/1.jpg);
 }
 
 .swiper-container .swiper-wrapper .img2 {
-    background-image: url(../images/store_banner2.jpg);
+    background-image: url(img/banner/pc/2.jpg);
 }
 
 .swiper-container .swiper-wrapper .img3 {
-    background-image: url(../images/store_banner3.jpg);
+    background-image: url(img/banner/pc/3.jpg);
 }
 
 .swiper-container .swiper-pagination-bullet {
