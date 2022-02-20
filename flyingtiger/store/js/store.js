@@ -66,15 +66,17 @@ $(function () {
     const colorWrap = document.querySelector(".color_wrap");
     const colors = document.querySelectorAll(".color");
 
-    colorWrap.addEventListener("click", function (e) {
-        if (!e.target.classList.contains("color")) return;
-        const idx = e.target.dataset.idx;
-        colors.forEach(ele => {
-            ele.classList.remove("color_shadow");
+    if (colorWrap) {
+        colorWrap.addEventListener("click", function (e) {
+            if (!e.target.classList.contains("color")) return;
+            const idx = e.target.dataset.idx;
+            colors.forEach(ele => {
+                ele.classList.remove("color_shadow");
+            });
+            e.target.classList.add("color_shadow");
+            document.querySelector(".main_img").setAttribute("src", "../images/product/new/new" + idx + ".jpg");
         });
-        e.target.classList.add("color_shadow");
-        document.querySelector(".main_img").setAttribute("src", "../images/product/new/new" + idx + ".jpg");
-    });
+    }
 
     $(".gallery li").on("click", function () {
         let src = $(this).children().attr("src");

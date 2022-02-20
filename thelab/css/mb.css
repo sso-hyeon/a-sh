@@ -1,7 +1,5 @@
 @charset "utf-8";
 
-body {
-}
 button {
     width: 38px;
     height: 19px;
@@ -52,13 +50,13 @@ header > .nav_m .searchIcon {
     display: inline;
 }
 .slide1 {
-    background: url(../images/main1_m.jpg) no-repeat 50% / cover;
+    background: url(../images/banner/m/1.jpg) no-repeat 50% / cover;
 }
 .slide1 > h2 {
     width: 53.3333%;
 }
 .slide2 {
-    background: url(../images/main2_m.jpg) no-repeat 50% / cover;
+    background: url(../images/banner/m/2.jpg) no-repeat 50% / cover;
 }
 .slide2 > h2 {
     left: 50%;
@@ -68,7 +66,7 @@ header > .nav_m .searchIcon {
     font-size: 1rem;
 }
 .slide3 {
-    background: url(../images/main3_m-03.jpg) no-repeat bottom center / cover;
+    background: url(../images/banner/m/3.jpg) no-repeat bottom center / cover;
 }
 .swiper-container-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-custom,

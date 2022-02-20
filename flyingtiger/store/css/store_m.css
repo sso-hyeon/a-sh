@@ -7,7 +7,7 @@
 /* header */
 header h1 {
     text-indent: -9999px;
-    background: url(../images/logo.svg) no-repeat 50% 50% / contain;
+    background: url(../../images/logo.svg) no-repeat 50% 50% / contain;
     width: 140px;
     height: 38px;
     margin-left: 20px;
@@ -164,15 +164,15 @@ main nav ul {
 }
 
 .swiper-container .swiper-wrapper .img1 {
-    background-image: url(img/banner/m/1.jpg);
+    background-image: url(../img/banner/m/1.jpg);
 }
 
 .swiper-container .swiper-wrapper .img2 {
-    background-image: url(img/banner/m/2.jpg);
+    background-image: url(../img/banner/m/2.jpg);
 }
 
 .swiper-container .swiper-wrapper .img3 {
-    background-image: url(img/banner/m/3.jpg);
+    background-image: url(../img/banner/m/3.jpg);
 }
 
 /* section */
