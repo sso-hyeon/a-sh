@@ -1,3 +1,8 @@
+const logo = document.querySelector(".logo");
+const menuIcon = document.querySelectorAll(".menuIcon");
+const counts = document.querySelectorAll(".count");
+const header = document.querySelector("header");
+
 const mainSwiper = new Swiper(".main-swiper", {
     loop: true,
     speed: 1500,
@@ -18,23 +23,22 @@ function slideChangeEvent() {
     const idx = this.realIndex;
 
     if (idx === 1) {
-        document.querySelector(".logo").classList.add("dark");
-        document.querySelectorAll(".menuIcon").forEach(icon => {
+        logo.classList.add("dark");
+        menuIcon.forEach(icon => {
             icon.classList.add("dark");
         });
-        document.querySelectorAll(".count").forEach(icon => {
+        counts.forEach(icon => {
             icon.classList.add("dark");
         });
-        document.querySelector("header").style.color = "#444";
+        header.style.color = "#444";
     } else {
-        document.querySelector(".logo").classList.remove("dark");
-        document.querySelectorAll(".menuIcon").forEach(icon => {
+        logo.classList.remove("dark");
+        menuIcon.forEach(icon => {
             icon.classList.remove("dark");
         });
-        document.querySelectorAll(".count").forEach(icon => {
+        counts.forEach(icon => {
             icon.classList.remove("dark");
         });
-        document.querySelector(".count").classList.remove("dark");
-        document.querySelector("header").style.color = "#fff";
+        header.style.color = "#fff";
     }
 }

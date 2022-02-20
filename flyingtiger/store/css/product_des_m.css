@@ -8,11 +8,10 @@
     display: none;
 }
 
-
 /* header */
 header h1 {
     text-indent: -9999px;
-    background: url(../images/logo.svg) no-repeat 50% 50%/contain;
+    background: url(../../images/logo.svg) no-repeat 50% 50% / contain;
     width: 140px;
     height: 38px;
     margin-left: 20px;
@@ -98,7 +97,7 @@ header h1 {
     height: 15vh;
     font-size: 30px;
     border-top: 4px solid #000;
-    font-family: 'GmarketSansB';
+    font-family: "GmarketSansB";
     display: flex;
     align-items: center;
     color: #fff;
@@ -111,7 +110,6 @@ header h1 {
 .active {
     transform: translateX(0);
 }
-
 
 /* register */
 main nav {
@@ -147,7 +145,7 @@ main nav ul {
     width: 850px;
     margin: 0;
     font-size: 15px;
-    font-family: 'GmarketSansB';
+    font-family: "GmarketSansB";
 }
 /* main */
 main {
@@ -162,7 +160,7 @@ main .category_title {
     padding: 50px 0 15px;
 }
 
-main>h5 {
+main > h5 {
     font-size: 25px;
     margin: 25px auto;
     width: 90%;
@@ -224,7 +222,6 @@ main>h5 {
     box-sizing: border-box;
 }
 
-
 .description h6 {
     text-transform: uppercase;
     color: #555;
@@ -236,15 +233,22 @@ main>h5 {
     font-size: 25px;
     margin: 20px 0 65px;
 }
-.description li { position: relative;}
-.description li .click { position: absolute; width: 50px; left: 80%; top: 80%;}
+.description li {
+    position: relative;
+}
+.description li .click {
+    position: absolute;
+    width: 50px;
+    left: 80%;
+    top: 80%;
+}
 /* box1 가격정보 */
 .box1 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     position: relative;
-    padding:30px 0 50px;
+    padding: 30px 0 50px;
     margin: 0 20px;
     border-top: 2px solid #ebebeb;
     border-bottom: 2px solid #ebebeb;
@@ -274,7 +278,7 @@ main>h5 {
     height: 25px;
 }
 
-.box1>li {
+.box1 > li {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -389,7 +393,7 @@ main>h5 {
     font-size: 25px;
     text-transform: capitalize;
     text-align: center;
-    font-family: 'GmarketSansB';
+    font-family: "GmarketSansB";
 }
 
 .btn_wrap2 div:last-child {
@@ -402,8 +406,16 @@ main>h5 {
 }
 
 /* des_list */
-.des_list { position: relative;}
-.des_list .click { position: absolute; width: 50px; top: -70px; left:0; transform: rotate(90deg);}
+.des_list {
+    position: relative;
+}
+.des_list .click {
+    position: absolute;
+    width: 50px;
+    top: -70px;
+    left: 0;
+    transform: rotate(90deg);
+}
 .des_list ul h5 {
     background-color: #d2e8e1;
     font-size: 1rem;
@@ -452,7 +464,7 @@ main>h5 {
 
 .gnb1 ul li {
     display: block;
-    font-family: 'GmarketSansL';
+    font-family: "GmarketSansL";
     border-bottom: 2px solid #ebebeb;
     padding: 15px 20px;
 }
@@ -463,7 +475,7 @@ main>h5 {
 
 .gnb1 ul li span {
     display: block;
-    font-family: 'GmarketSansM';
+    font-family: "GmarketSansM";
 }
 
 /* 상품후기 */
@@ -508,19 +520,19 @@ main>h5 {
     width: 70%;
 }
 
-.gnb2 .bar ul li div>div {
+.gnb2 .bar ul li div > div {
     background-color: #f15a29;
     height: 10px;
     width: 7%;
 }
 
-.gnb2 .bar ul li:nth-child(2) div>div {
+.gnb2 .bar ul li:nth-child(2) div > div {
     background-color: #f15a29;
     height: 10px;
     width: 90%;
 }
 
-.gnb2 .bar ul li:nth-child(3) div>div {
+.gnb2 .bar ul li:nth-child(3) div > div {
     background-color: #f15a29;
     height: 10px;
     width: 3%;
@@ -592,7 +604,7 @@ section h4 {
 }
 
 .recommend div ul li p:nth-of-type(1) {
-    font-family: 'GmarketSansL';
+    font-family: "GmarketSansL";
     font-size: 14px;
 }
 
@@ -600,8 +612,6 @@ section h4 {
     font-size: 16px;
     margin: 0;
 }
-
-
 
 /* footer */
 footer {
@@ -624,7 +634,7 @@ footer .foot {
 
 footer .portfolio a {
     font-size: 13px;
-    font-family: 'GmarketSansM';
+    font-family: "GmarketSansM";
     line-height: 24px;
     width: 130px;
     height: 24px;
@@ -634,19 +644,19 @@ footer .portfolio a {
     text-align: center;
 }
 
-footer .foot>div img {
+footer .foot > div img {
     width: 110px;
 }
 
-footer .foot>div p {
+footer .foot > div p {
     font-size: 8px;
 }
 
-footer .foot>ul {
+footer .foot > ul {
     font-size: 13px;
 }
 
-footer .foot>ul li {
+footer .foot > ul li {
     line-height: 2;
 }
 

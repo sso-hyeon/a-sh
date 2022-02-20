@@ -8,6 +8,19 @@ body {
     font-family: "Noto Sans KR", sans-serif;
     font-weight: 400;
 }
+::selection {
+    background-color: #f6f7f9;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+body::-webkit-scrollbar-thumb {
+    height: 10%;
+    background-color: #313942;
+    border-radius: 10px;
+}
+
 a {
     display: block;
     color: inherit;
@@ -30,16 +43,16 @@ button {
     height: 28px;
     border-radius: 14px;
     text-indent: -9999px;
-    background: url(../images/btn.png) no-repeat 50% 50%;
+    background: url(../images/common/btn.png) no-repeat 50% 50%;
     cursor: pointer;
     margin-left: 20px;
 }
 button:hover {
-    background: url(../images/btn_w.png) no-repeat 50% 50%;
+    background: url(../images/common/btn_w.png) no-repeat 50% 50%;
     background-color: #696d73;
 }
 button:active {
-    background: url(../images/btn_w.png) no-repeat 50% 50%;
+    background: url(../images/common/btn_w.png) no-repeat 50% 50%;
     background-color: #000;
     border: #000 2px solid;
 }
@@ -68,14 +81,14 @@ header {
     z-index: 2;
 }
 header .logo {
-    background: url(../images/logo.png) no-repeat 100% / contain;
+    background: url(../images/common/logo.png) no-repeat 100% / contain;
     text-indent: -9999px;
     width: 164px;
     height: 37px;
 }
 
 header .logo.dark {
-    background: url(../images/logo_dark.png) no-repeat 100% / contain;
+    background: url(../images/common/logo_dark.png) no-repeat 100% / contain;
 }
 header > .nav {
     display: flex;
@@ -105,12 +118,12 @@ header > .nav > li:hover span {
 
 header .menuIcon {
     text-indent: -9999px;
-    background: url(../images/menu_bar_white.png) no-repeat center;
+    background: url(../images/common/menu_w.png) no-repeat center;
     width: 29px;
 }
 
 header .menuIcon.dark {
-    background: url(../images/menu_bar_black.png) no-repeat center;
+    background: url(../images/common/menu.png) no-repeat center;
 }
 
 .nav_m {
@@ -144,7 +157,7 @@ main {
 }
 
 .slide1 {
-    background: url(../images/main1.jpg) no-repeat 50% / cover;
+    background: url(../images/banner/pc/1.jpg) no-repeat 50% / cover;
 }
 .slide1 > h2 {
     position: absolute;
@@ -154,7 +167,7 @@ main {
 }
 
 .slide2 {
-    background: url(../images/main2.jpg) no-repeat 50% / cover;
+    background: url(../images/banner/pc/2.jpg) no-repeat 50% / cover;
 }
 .slide2 > h2 {
     position: absolute;
@@ -165,7 +178,7 @@ main {
     font-size: 1.875rem;
 }
 .slide3 {
-    background: url(../images/main3-03.jpg) no-repeat 50% / cover;
+    background: url(../images/banner/pc/3.jpg) no-repeat 50% / cover;
 }
 
 .swiper-container-horizontal > .swiper-pagination-bullets,
@@ -192,7 +205,7 @@ main {
     position: relative;
     display: flex;
     justify-content: space-between;
-    background: url(../images/bg_circle-11.png) no-repeat 50% 50%;
+    background: url(../images/deco/circle.png) no-repeat 50% 50%;
 }
 .intro > figure {
     width: 50%;
