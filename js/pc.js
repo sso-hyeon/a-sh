@@ -30,6 +30,6 @@ function goPortfolioPage() {
     const slide = document.querySelector(".slide");
 
     slide.addEventListener("click", function () {
-        location.href = "https://sso-hyeon.github.io/a-sh/portfolio.html";
+        location.href = "https://sso-hyeon.github.io/a-sh/portfolio/index.html";
     });
 }
