@@ -46,12 +46,12 @@ img {
     border-radius: 20px;
     line-height: 40px;
     font-weight: 700;
-    background: url(/images/icon-09.png) no-repeat 93% / cover;
+    background: url(/a-sh/images/icon-09.png) no-repeat 93% / cover;
     background-size: 13px;
 }
 
 .title a:hover {
-    background: url(/images/icon_w-09.png) no-repeat 93% / cover #000;
+    background: url(/a-sh/images/icon_w-09.png) no-repeat 93% / cover #000;
     background-size: 13px;
     color: #fff;
 }
@@ -63,7 +63,7 @@ img {
     top: 30px;
     right: 30px;
     text-indent: -9999px;
-    background: url(/images/close.svg) no-repeat 50% 50% / contain;
+    background: url(/a-sh/images/close.svg) no-repeat 50% 50% / contain;
     z-index: 999;
 }
 
