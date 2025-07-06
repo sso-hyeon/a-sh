@@ -150,7 +150,7 @@
   padding: 0 20px;
   right: 0px;
   width: var(--portfolio-slide-width);
-  height: 100vh;
+  height: 100dvh;
   overflow: hidden;
   top: 0;
   background-color: #fff;
@@ -159,11 +159,11 @@
 
 .portfolio-slide .gallery {
   width: 100%;
-  height: 1400px;
+  height: 2100px;
   background-image: url(../images/slide.png);
   background-size: 100%;
   background-repeat: repeat-y;
-  animation: move linear 15s infinite;
+  animation: move linear 50s infinite;
   cursor: zoom-in;
 }
 
@@ -171,9 +171,13 @@
   opacity: 0.8;
 }
 
+.portfolio-slide:hover .gallery {
+  animation-play-state: paused;
+}
+
 @keyframes move {
   100% {
-    background-position-y: -1400px;
+    background-position-y: -9999px;
   }
 }
 /* E: portfolio-slide */
