@@ -23,7 +23,8 @@
   padding-bottom: 10rem;
 }
 .contents-item {
-  height: 25rem;
+  max-width: 1300px;
+  height: 30rem;
   display: flex;
   border-top: 1px solid #414042;
   border-bottom: 1px solid #414042;
@@ -44,20 +45,21 @@
 
 .contents-item .txt-box {
   flex: 1;
-  padding: 2rem 1.5rem;
+  padding: 2.3rem 2rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   font-size: 1rem;
 }
 .contents-item .txt-box .title {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
 }
 .contents-item .txt-box .sub_title {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
 }
 .contents-item .txt-box .tag,
 .contents-item .txt-box .skill {
+  font-size: 1.4rem;
 }
 
 .contents-item .txt-box .skill strong {
@@ -110,6 +112,7 @@
   /* S: title-section */
   .title-section {
     margin: 10rem 0 5rem;
+    padding: 0 5vw;
   }
   .title-section .title {
     font-size: 2.5rem;

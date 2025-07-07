@@ -13,7 +13,6 @@ window.addEventListener("DOMContentLoaded", () => {
     easing: "ease-in-out-sine",
   });
 
-  // goPortfolioPage();
   resizeSwiper();
 
   type
@@ -25,7 +24,7 @@ window.addEventListener("DOMContentLoaded", () => {
     .start();
 });
 
-function resizeSwiper() {
+const resizeSwiper = debounce(() => {
   console.log(this.innerWidth);
   if (1200 > this.innerWidth) {
     if (this.innerWidth > 768) {
@@ -38,9 +37,10 @@ function resizeSwiper() {
     } else {
       swiper = new Swiper(".portfolio-swiper", {
         autoplay: { delay: 1500, disableOnInteraction: false },
+        slidesPerView: 1,
         spaceBetween: 30,
         loop: true,
       });
     }
   }
-}
+}, 500);

@@ -21,7 +21,7 @@
   --states-blue: #0560fd;
   --states-green: #0bc274;
 
-  --header-width: 250px;
+  --header-width: 280px;
   --header-height: 100dvh;
 
   --lnb-height: 10rem;
@@ -96,7 +96,7 @@ img {
   color: #c0c0c0;
   padding: 1rem;
   padding-bottom: 1rem;
-  font-size: 1rem;
+  font-size: 1.4rem;
   font-weight: 400;
 }
 .lnb .lnb-meun-item:hover {
