@@ -69,44 +69,11 @@
 .contents-item .btn_wrap {
   display: flex;
   justify-content: space-between;
-  gap: 1rem;
+  gap: 0.8rem;
 }
 
-.contents-item .btn_wrap .btn {
-  flex: 1;
-  padding: 0 1rem;
-  border: 1px solid #000;
-  height: 40px;
-  border-radius: 20px;
-  line-height: 40px;
-  font-size: 0.85rem;
-  font-weight: 700;
-  background-repeat: no-repeat;
-  background-size: 13px;
-  background-position: 88%;
-}
-.contents-item .btn_wrap .btn:hover {
-  background-color: #000;
-  color: #fff;
-}
-.contents-item .btn_wrap .btn:disabled {
-  background-color: #eee;
-  border-color: #999;
-  pointer-events: none;
-}
-
-.contents-item .btn_wrap .go-btn {
-  background-image: url(../../images/icon-09.png);
-}
-.contents-item .btn_wrap .go-btn:hover {
-  background-image: url(../../images/icon_w-09.png);
-}
-
-.contents-item .btn_wrap .desc-btn {
-  background-image: url(../../images/icon-10.png);
-}
-.contents-item .btn_wrap .desc-btn:hover {
-  background-image: url(../../images/icon_w-10.png);
+.project-link-btn {
+  text-align: center;
 }
 @media (max-width: 1199px) {
   /* S: title-section */
@@ -134,28 +101,6 @@
   }
   .contents-item .txt-box {
     gap: 1.2rem;
-  }
-
-  .contents-item .btn_wrap .btn {
-    height: 2.5rem;
-    border-radius: 2rem;
-    line-height: 2.5rem;
-    text-indent: 0;
-    text-align: center;
-  }
-
-  .contents-item .btn_wrap .go-btn {
-    background: transparent;
-  }
-  .contents-item .btn_wrap .go-btn:hover {
-    background: transparent;
-  }
-
-  .contents-item .btn_wrap .desc-btn {
-    background: transparent;
-  }
-  .contents-item .btn_wrap .desc-btn:hover {
-    background: transparent;
   }
 }
 @media (max-width: 768px) {

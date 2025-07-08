@@ -1,5 +1,3 @@
-import { SCROLL_CONTROL } from "./utils.js";
-
 class Modal {
   // _ protected
   // 현재 클래스와 상속받은 클래스에서만 접근 가능
@@ -14,6 +12,7 @@ class Modal {
   modalContainer = undefined;
   contentsWrap = undefined;
   btnWrap = undefined;
+  toggleBtns = [];
 
   constructor() {
     this.#initializeElements();
@@ -22,32 +21,60 @@ class Modal {
   #initializeElements() {
     const modal = document.createElement("div");
     const modalItem = document.createElement("div");
+    const modalHeader = document.createElement("div");
     const modalContents = document.createElement("div");
-    const btnWrap = document.createElement("div");
+    const closeBtn = document.createElement("button");
 
     modal.classList.add("modal-wrap");
     modalItem.classList.add("modal-item");
+    modalHeader.classList.add("modal-header");
     modalContents.classList.add("modal-contents-wrap");
-    btnWrap.classList.add("modal-btns-wrap");
+    closeBtn.classList.add("close-btn");
 
+    closeBtn.innerHTML = "X";
+    modalHeader.innerHTML = `Detail`;
+    modalHeader.appendChild(closeBtn);
+
+    modalItem.appendChild(modalHeader);
     modalItem.appendChild(modalContents);
-    modalItem.appendChild(btnWrap);
     modal.appendChild(modalItem);
 
     this.modalContainer = modal;
     this.contentsWrap = modalContents;
-    this.btnWrap = btnWrap;
+
+    closeBtn.addEventListener("click", () => {
+      this.close();
+    });
   }
 
   #renderElement() {
     document.body.insertAdjacentElement("beforeend", this.modalContainer);
     this.modalContainer.setAttribute("tabindex", "0");
     SCROLL_CONTROL.lock();
+    this.#setToggleBtnsEvent();
   }
 
   #removeElement() {
     this.modalContainer.remove();
+    this.contentsWrap.innerHTML = "";
     SCROLL_CONTROL.unlock();
+  }
+
+  #setToggleBtnsEvent() {
+    this.toggleBtns.map((btn) => {
+      const toggleItemHeight = btn.nextElementSibling
+        .querySelector(".modal-contents-toggle-item")
+        .getBoundingClientRect().height;
+
+      btn.parentElement.style.setProperty(
+        "--toggle-height",
+        `${toggleItemHeight}px`
+      );
+
+      btn.addEventListener("click", (e) => {
+        e.target.classList.toggle("active");
+      });
+    });
   }
 
   getElements() {
@@ -94,5 +121,50 @@ class Modal {
 
       btn.addEventListener("click", button.clickfun);
     });
+  }
+
+  setContents(info) {
+    const item = document.createElement("div");
+    const toggleBtn = document.createElement("button");
+    const toggleText = document.createElement("div");
+    const toggleTextItem = document.createElement("div");
+
+    item.classList.add("modal-contents-item");
+    toggleBtn.classList.add("modal-contents-name");
+    toggleText.classList.add("modal-contents-toggle");
+    toggleTextItem.classList.add("modal-contents-toggle-item");
+
+    toggleTextItem.innerHTML = `
+                    <div>
+                  <h4 class="project-sub-title">[프로젝트 개요]</h4>
+                  <div class="project-text">
+                    ${info.info}
+                  </div>
+                </div>
+                <div>
+                  <h4 class="project-sub-title">[주요 역할 및 기여]</h4>
+                  <div class="project-text">
+                    ${info.contribution}
+                  </div>
+                </div>
+                <div>
+                  <h4 class="project-sub-title">[활용 기술]</h4>
+                  <div class="project-text">
+                    ${info.skills}
+                  </div>
+                </div>
+                <a class="btn project-link-btn" href="${info.link}">View</a>
+
+    `;
+
+    toggleBtn.innerHTML = `<span>${info.title}</span><span class="toggle-icon">▴</span>`;
+
+    toggleText.appendChild(toggleTextItem);
+
+    item.appendChild(toggleBtn);
+    item.appendChild(toggleText);
+
+    this.contentsWrap.appendChild(item);
+    this.toggleBtns.push(toggleBtn);
   }
 }
