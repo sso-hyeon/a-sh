@@ -64,7 +64,7 @@ header .nav li:hover {
   }
 
   header > p {
-    background: url(images/menu_bar.png) no-repeat 100% / cover;
+    background: url(../assets/images/menu_bar.png) no-repeat 100% / cover;
     width: 28px;
     text-indent: -9999px;
     height: 23px;

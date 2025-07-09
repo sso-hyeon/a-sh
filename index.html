@@ -32,16 +32,16 @@
             }
         </script> -->
 
-    <link rel="stylesheet" href="./lib/css/reset.css" />
-    <link rel="stylesheet" href="./lib/css/aos.css" />
+    <link rel="stylesheet" href="./assets/lib/css/reset.css" />
+    <link rel="stylesheet" href="./assets/lib/css/aos.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
 
-    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./assets/css/common.css" />
+    <link rel="stylesheet" href="./assets/css/header.css" />
     <link rel="stylesheet" href="./css/main.css" />
-    <link rel="stylesheet" href="./css/header.css" />
 
     <!-- font -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -54,21 +54,21 @@
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="./favicon/apple-touch-icon.png"
+      href="./assets/favicon/apple-touch-icon.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./favicon/favicon-32x32.png"
+      href="./assets/favicon/favicon-32x32.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="./favicon/favicon-16x16.png"
+      href="./assets/favicon/favicon-16x16.png"
     />
-    <link rel="manifest" href="./favicon/site.webmanifest" />
+    <link rel="manifest" href="./assets/favicon/site.webmanifest" />
   </head>
   <body>
     <!-- 좌측 내비게이션 -->
@@ -77,8 +77,8 @@
       <h1><a href="index.html">a-sh</a></h1>
       <div class="nav-wrap">
         <ul class="nav">
-          <li><a href="./index.html">INTRO</a></li>
-          <li><a href="./portfolio/index.html">PORTFOLIO</a></li>
+          <li class="active"><a href="./index.html">INTRO</a></li>
+          <li><a href="./career/index.html">CAREER</a></li>
         </ul>
         <div class="nav-footer">
           <p class="comment mo-only">언제든지 연락 주세요 : )</p>
@@ -102,23 +102,13 @@
       <div class="main-container">
         <!-- 상단 내비게이션 -->
         <div class="lnb pc-only">
-          <ul class="lnb-menu">
-            <li class="lnb-meun-item">
-              <a href="#intro">About Me</a>
-            </li>
-            <li class="lnb-meun-item">
-              <a href="#edu">Education</a>
-            </li>
-            <li class="lnb-meun-item">
-              <a href="#cert">Certification</a>
-            </li>
-            <li class="lnb-meun-item">
-              <a href="#skills">Skills</a>
-            </li>
-            <li class="lnb-meun-item">
-              <a href="#career">Career</a>
-            </li>
-          </ul>
+          <div class="lnb-menu">
+            <button class="lnb-menu-item" data-lnb="about">About Me</button>
+            <button class="lnb-menu-item" data-lnb="edu">Education</button>
+            <button class="lnb-menu-item" data-lnb="cert">Certification</button>
+            <button class="lnb-menu-item" data-lnb="skills">Skills</button>
+            <button class="lnb-menu-item" data-lnb="career">Career</button>
+          </div>
         </div>
         <div class="content-container">
           <section class="title-section">
@@ -126,22 +116,22 @@
               <div class="swiper portfolio-swiper">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
-                    <img src="./images/slide_1.png" alt="현대자동차" />
+                    <img src="./assets/images/slide_1.png" alt="현대자동차" />
                   </div>
                   <div class="swiper-slide">
-                    <img src="./images/slide_2.png" alt="대한양궁협회" />
+                    <img src="./assets/images/slide_2.png" alt="대한양궁협회" />
                   </div>
                   <div class="swiper-slide">
-                    <img src="./images/slide_3.png" alt="롯데백화점몰" />
+                    <img src="./assets/images/slide_3.png" alt="롯데백화점몰" />
                   </div>
                   <div class="swiper-slide">
-                    <img src="./images/slide_4.png" alt="롯데면세점" />
+                    <img src="./assets/images/slide_4.png" alt="롯데면세점" />
                   </div>
                   <div class="swiper-slide">
-                    <img src="./images/slide_5.png" alt="세이브존" />
+                    <img src="./assets/images/slide_5.png" alt="세이브존" />
                   </div>
                   <div class="swiper-slide">
-                    <img src="./images/slide_6.png" alt="젤라또피케" />
+                    <img src="./assets/images/slide_6.png" alt="젤라또피케" />
                   </div>
                 </div>
               </div>
@@ -149,14 +139,14 @@
             <h1 class="main-title">Ann <br class="mo-only" />So Hyeon</h1>
           </section>
           <!-- intro -->
-          <section class="contents-section intro" id="intro">
+          <section class="contents-section intro" data-lnb="about">
             <div class="title-wrap">
               <h2 class="title">About me</h2>
               <p class="title-text">퍼블리셔 "안소현"을 소개합니다.</p>
             </div>
             <div class="profile">
               <div class="profile-img" data-aos="fade-up">
-                <img src="./images/profile_img.jpg" alt="" />
+                <img src="./assets/images/profile_img.jpg" alt="" />
               </div>
               <ul class="profile-info">
                 <li data-aos="fade-up">
@@ -187,7 +177,7 @@
             </div>
           </div>
           <!-- education -->
-          <section class="contents-section edu" id="edu">
+          <section class="contents-section edu" data-lnb="edu">
             <div class="title-wrap">
               <h2 class="title">Education</h2>
               <p class="title-text">학력</p>
@@ -212,7 +202,7 @@
           </section>
 
           <!-- certification -->
-          <section class="contents-section cert" id="cert">
+          <section class="contents-section cert" data-lnb="cert">
             <div class="title-wrap">
               <h2 class="title">Certification</h2>
               <p class="title-text">자격증</p>
@@ -240,7 +230,7 @@
           </section>
 
           <!-- skills -->
-          <section class="contents-section skills" id="skills">
+          <section class="contents-section skills" data-lnb="skills">
             <div class="title-wrap">
               <h2 class="title">Skills</h2>
               <p class="title-text">능력</p>
@@ -302,7 +292,7 @@
           </section>
 
           <!-- career -->
-          <section class="contents-section career" id="career">
+          <section class="contents-section career" data-lnb="career">
             <div class="title-wrap">
               <h2 class="title">Career</h2>
               <p class="title-text">경력사항</p>
@@ -349,13 +339,13 @@
     </footer>
 
     <!-- aos script -->
-    <script src="./lib/js/aos.js"></script>
+    <script src="./assets/lib/js/aos.js"></script>
     <!-- swiper -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- typewriter js -->
-    <script src="./lib/js/core.js"></script>
-    <script src="./js/util.js"></script>
+    <script src="./assets/lib/js/core.js"></script>
+    <script src="./assets/js/util.js"></script>
+    <script src="./assets/js/header.js"></script>
     <script src="./js/main.js"></script>
-    <script src="./js/header.js"></script>
   </body>
 </html>

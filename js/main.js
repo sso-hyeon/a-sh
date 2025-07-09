@@ -1,11 +1,15 @@
-let swiper;
+const menuButtons = document.querySelectorAll(".lnb-menu-item");
+const menuNames = []; // lnb 버튼 data-lnb values
+let contentsSecOffsetTopValue = []; // .contents-sections offsetTop values
+let swiper; // main swiper
+
 const type = new Typewriter(".tag", {
   autoStart: true, //자동 시작
   loop: true, //반복
 });
 
 window.addEventListener("resize", function () {
-  resizeSwiper();
+  setSwiper();
 });
 
 window.addEventListener("DOMContentLoaded", () => {
@@ -13,7 +17,11 @@ window.addEventListener("DOMContentLoaded", () => {
     easing: "ease-in-out-sine",
   });
 
-  resizeSwiper();
+  menuButtons.forEach((item) => {
+    menuNames.push(item.dataset.lnb);
+  });
+  setSwiper();
+  setElemOffsetTopValue();
 
   type
     .typeString("#스마일#성실함")
@@ -24,8 +32,25 @@ window.addEventListener("DOMContentLoaded", () => {
     .start();
 });
 
-const resizeSwiper = debounce(() => {
-  console.log(this.innerWidth);
+window.addEventListener("scroll", () => {
+  test();
+});
+
+const test = debounce(() => {
+  console.log(window.scrollY);
+}, 500);
+
+document.querySelector(".lnb-menu").addEventListener("click", (e) => {
+  if (e.target.localName !== "button") {
+    return;
+  }
+  console.log(contentsSecOffsetTopValue);
+
+  const targetDataName = e.target.dataset.lnb;
+  setScrollToSection(targetDataName);
+});
+
+const setSwiper = debounce(() => {
   if (1200 > this.innerWidth) {
     if (this.innerWidth > 768) {
       swiper = new Swiper(".portfolio-swiper", {
@@ -44,3 +69,29 @@ const resizeSwiper = debounce(() => {
     }
   }
 }, 500);
+
+const setElemOffsetTopValue = debounce(() => {
+  const value = [];
+  menuNames.map((menu) => {
+    const targetElem = document.querySelector(
+      `.contents-section[data-lnb='${menu}']`
+    );
+
+    const lnbHeight = document.querySelector(".lnb").clientHeight;
+    const elemTop = targetElem.offsetTop;
+
+    value.push({ name: menu, value: lnbHeight + elemTop });
+  });
+
+  return (contentsSecOffsetTopValue = value);
+});
+
+function setScrollToSection(target) {
+  const targetElem = document.querySelector(
+    `.contents-section[data-lnb='${target}']`
+  );
+  const lnbHeight = document.querySelector(".lnb").clientHeight;
+  const elemTop = targetElem.offsetTop;
+
+  window.scrollTo({ top: elemTop - lnbHeight, behavior: "smooth" });
+}

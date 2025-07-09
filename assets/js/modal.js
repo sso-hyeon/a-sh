@@ -24,6 +24,8 @@ class Modal {
     const modalHeader = document.createElement("div");
     const modalContents = document.createElement("div");
     const closeBtn = document.createElement("button");
+    const closeImg = new Image();
+    closeImg.src = "../assets/images/ico-close.svg";
 
     modal.classList.add("modal-wrap");
     modalItem.classList.add("modal-item");
@@ -31,7 +33,7 @@ class Modal {
     modalContents.classList.add("modal-contents-wrap");
     closeBtn.classList.add("close-btn");
 
-    closeBtn.innerHTML = "X";
+    closeBtn.appendChild(closeImg);
     modalHeader.innerHTML = `Detail`;
     modalHeader.appendChild(closeBtn);
 
@@ -128,11 +130,17 @@ class Modal {
     const toggleBtn = document.createElement("button");
     const toggleText = document.createElement("div");
     const toggleTextItem = document.createElement("div");
+    const toggleArrow = document.createElement("span");
 
     item.classList.add("modal-contents-item");
     toggleBtn.classList.add("modal-contents-name");
     toggleText.classList.add("modal-contents-toggle");
     toggleTextItem.classList.add("modal-contents-toggle-item");
+    toggleArrow.classList.add("toggle-icon");
+
+    const toggleArrowImg = new Image();
+    toggleArrowImg.src = "../assets/images/ico-arrow.svg";
+    toggleArrow.appendChild(toggleArrowImg);
 
     toggleTextItem.innerHTML = `
                     <div>
@@ -157,7 +165,8 @@ class Modal {
 
     `;
 
-    toggleBtn.innerHTML = `<span>${info.title}</span><span class="toggle-icon">▴</span>`;
+    toggleBtn.innerHTML = `<span>${info.title}</span>`;
+    toggleBtn.appendChild(toggleArrow);
 
     toggleText.appendChild(toggleTextItem);
 
