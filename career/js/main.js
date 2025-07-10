@@ -1,3 +1,6 @@
+const menuButtons = document.querySelectorAll(".lnb-menu-item");
+const menuNames = []; // lnb 버튼 data-lnb values
+let contentsSecOffsetTopValue = []; // .contents-sections offsetTop values
 const modal = new Modal();
 
 window.addEventListener("DOMContentLoaded", () => {
@@ -84,4 +87,39 @@ function setCareerList() {
         break;
     }
   });
+}
+
+document.querySelector(".lnb-menu").addEventListener("click", (e) => {
+  if (e.target.localName !== "button") {
+    return;
+  }
+
+  const targetDataName = e.target.dataset.lnb;
+  setScrollToSection(targetDataName);
+});
+
+const setElemOffsetTopValue = debounce(() => {
+  const value = [];
+  menuNames.map((menu) => {
+    const targetElem = document.querySelector(
+      `.content-container[data-lnb='${menu}']`
+    );
+
+    const lnbHeight = document.querySelector(".lnb").clientHeight;
+    const elemTop = targetElem.offsetTop;
+
+    value.push({ name: menu, value: lnbHeight + elemTop });
+  });
+
+  return (contentsSecOffsetTopValue = value);
+});
+
+function setScrollToSection(target) {
+  const targetElem = document.querySelector(
+    `.content-container[data-lnb='${target}']`
+  );
+  const lnbHeight = document.querySelector(".lnb").clientHeight;
+  const elemTop = targetElem.offsetTop;
+
+  window.scrollTo({ top: elemTop - lnbHeight, behavior: "smooth" });
 }
