@@ -25,7 +25,12 @@ function setModalContents(projectName) {
 }
 
 function setCareerList() {
-  const section = document.querySelector(".contents-section");
+  const careerSection = document.querySelector(
+    ".career-container .contents-section"
+  );
+  const sideSection = document.querySelector(
+    ".side-container .contents-section"
+  );
 
   careerList.map((list) => {
     const item = document.createElement("div");
@@ -68,6 +73,15 @@ function setCareerList() {
     item.appendChild(itemThumb);
     item.appendChild(itemText);
 
-    section.appendChild(item);
+    switch (list.type) {
+      case "career":
+        careerSection.appendChild(item);
+        break;
+      case "side":
+        sideSection.appendChild(item);
+        break;
+      default:
+        break;
+    }
   });
 }

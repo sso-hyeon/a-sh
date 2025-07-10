@@ -143,7 +143,7 @@ class Modal {
     toggleArrow.appendChild(toggleArrowImg);
 
     toggleTextItem.innerHTML = `
-                    <div>
+                <div>
                   <h4 class="project-sub-title">[프로젝트 개요]</h4>
                   <div class="project-text">
                     ${info.info}
@@ -158,7 +158,7 @@ class Modal {
                 <div>
                   <h4 class="project-sub-title">[활용 기술]</h4>
                   <div class="project-text">
-                    ${info.skills}
+                    ${info.skills.join(", ")}
                   </div>
                 </div>
                 <a class="btn project-link-btn" href="${info.link}">View</a>
