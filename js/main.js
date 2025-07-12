@@ -37,7 +37,11 @@ window.addEventListener("scroll", () => {
 });
 
 const test = debounce(() => {
-  console.log(window.scrollY);
+  // console.log(window.scrollY);
+  const x = contentsSecOffsetTopValue.filter(
+    (val) => val.value < window.scrollY
+  );
+  console.log(x);
 }, 500);
 
 document.querySelector(".lnb-menu").addEventListener("click", (e) => {
