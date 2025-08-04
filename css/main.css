@@ -113,9 +113,11 @@
 .skill-text {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   gap: 1rem;
 }
 .skill-text .skill-highlight {
+  flex: none;
   position: relative;
   font-size: 1.3rem;
   font-weight: 700;

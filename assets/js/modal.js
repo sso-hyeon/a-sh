@@ -34,7 +34,7 @@ class Modal {
     closeBtn.classList.add("close-btn");
 
     closeBtn.appendChild(closeImg);
-    modalHeader.innerHTML = `Detail`;
+    modalHeader.innerHTML = `Project Detail`;
     modalHeader.appendChild(closeBtn);
 
     modalItem.appendChild(modalHeader);

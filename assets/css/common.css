@@ -191,17 +191,17 @@ footer > .txt2 {
 }
 
 .btn.go-btn {
-  background-image: url(../assets/images/icon-09.png);
+  background-image: url(../images/icon-09.png);
 }
 .btn.go-btn:hover {
-  background-image: url(../assets/images/icon_w-09.png);
+  background-image: url(../images/icon_w-09.png);
 }
 
 .btn.desc-btn {
-  background-image: url(../assets/images/icon-10.png);
+  background-image: url(../images/icon-10.png);
 }
 .btn.desc-btn:hover {
-  background-image: url(../assets/images/icon_w-10.png);
+  background-image: url(../images/icon_w-10.png);
 }
 /* E: customButton */
 
@@ -215,22 +215,23 @@ footer > .txt2 {
   width: 100%;
   max-width: var(--content-width);
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.3);
   z-index: 999;
 }
 .modal-wrap .modal-item {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
-  padding: 3rem 2rem;
+  gap: 3rem;
+  padding: 3rem;
   width: 80vw;
   max-width: 70rem;
-  max-height: 80dvh;
+  height: 80dvh;
   border-radius: 2rem;
   background-color: #fff;
   overflow-y: auto;
-  box-shadow: 0px 0.2rem 1.2rem 0px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0px 0.2rem 1.2rem 0px rgba(0, 0, 0, 0.1); */
   box-sizing: border-box;
+  color: #000;
 }
 .modal-item .modal-header {
   display: flex;
@@ -244,16 +245,17 @@ footer > .txt2 {
   gap: 1rem;
 }
 .modal-contents-item {
-  border-bottom: 1px solid #000;
+  /* background-color: #fff; */
+  /* border-bottom: 1px solid #000; */
 }
 .modal-contents-name {
-  padding: 1rem 0;
+  padding: 1.5rem 0;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   text-align: left;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: 700;
   cursor: pointer;
 }
@@ -284,17 +286,19 @@ footer > .txt2 {
 .modal-contents-toggle-item {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-  padding: 1.3rem 0;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: #f2f2f2;
+  border-radius: 0 1rem 1rem 1rem;
 }
 
 .modal-contents-toggle-item .project-sub-title {
-  margin-bottom: 0.5rem;
-  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
   font-weight: 500;
 }
 .modal-contents-toggle-item .project-text {
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 #form-wrap,
@@ -309,7 +313,12 @@ footer > .txt2 {
   cursor: pointer;
 }
 .project-link-btn {
+  padding: 1rem 0;
   text-align: center;
+  font-size: 1.4rem;
+  border-radius: 999px;
+  border-width: 2px;
+  text-transform: uppercase;
 }
 /* E: modal */
 
