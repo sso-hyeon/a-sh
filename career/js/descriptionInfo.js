@@ -63,6 +63,44 @@ const descriptionInfo = [
     ],
   },
   {
+    name: "koreanair",
+    projects: [
+      {
+        title: "면세점 스카이샵 모바일 매거진 페이지",
+        info: "대한항공 면세점 홍보 및 고객유치를 위한 모바일 매거진 페이지 (현재 서비스 종료)",
+        contribution:
+          "대한항공 모바일 매거진 페이지 초기 레이아웃 구축 및 유지보수",
+        skills: ["HTML", "CSS", "Javascript", "GSAP"],
+        link: "https://mims.kr/koreanaridfs-backup/",
+      },
+    ],
+  },
+  {
+    name: "ldf",
+    projects: [
+      {
+        title: "면세점 모바일 매거진 페이지",
+        info: "롯데면세점 면세점 홍보 및 고객유치를 위한 모바일 매거진 페이지 (현재 서비스 종료)",
+        contribution:
+          "월별 매거진 언어별(한국어, 중국어간체, 중국어번체, 일본어, 영어, 베트남어) 퍼블리싱 및 유지보수",
+        skills: ["HTML", "CSS", "Javascript", "GSAP", "swiper"],
+        link: "https://mims.kr/ilottedfs-backup/kr/",
+      },
+    ],
+  },
+  {
+    name: "ak",
+    projects: [
+      {
+        title: "AK 플라자 모바일 매거진 페이지",
+        info: "AK 플라자 주간 행사 정보를 담은 매거진 형식의 모바일 페이지",
+        contribution: "행사별 페이지, 쿠폰 발행 이벤트 페이지 구현 및 유지보수",
+        skills: ["HTML", "CSS", "Javascript", "swiper"],
+        link: "https://mims.kr/e-akplaza-sw-backup/",
+      },
+    ],
+  },
+  {
     name: "lulu",
     projects: [
       {

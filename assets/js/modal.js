@@ -59,11 +59,18 @@ class Modal {
   #removeElement() {
     this.modalContainer.remove();
     this.contentsWrap.innerHTML = "";
+    this.toggleBtns = [];
     SCROLL_CONTROL.unlock();
   }
 
-  #setToggleBtnsEvent() {
+  #setToggleBtnsReset() {
     this.toggleBtns.map((btn) => {
+      btn.classList.remove("active");
+    });
+  }
+
+  #setToggleBtnsEvent() {
+    this.toggleBtns.map((btn, index) => {
       const toggleItemHeight = btn.nextElementSibling
         .querySelector(".modal-contents-toggle-item")
         .getBoundingClientRect().height;
@@ -73,8 +80,19 @@ class Modal {
         `${toggleItemHeight}px`
       );
 
+      console.log(index);
+
+      if (index === 0) {
+        btn.classList.add("active");
+      }
+
       btn.addEventListener("click", (e) => {
-        e.target.classList.toggle("active");
+        if (e.target.classList.contains("active")) {
+          e.target.classList.remove("active");
+        } else {
+          this.#setToggleBtnsReset();
+          e.target.classList.add("active");
+        }
       });
     });
   }
